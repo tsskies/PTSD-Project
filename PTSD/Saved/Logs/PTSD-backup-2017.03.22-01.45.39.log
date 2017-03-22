@@ -1,0 +1,970 @@
+﻿Log file open, 03/21/17 15:44:48
+LogInit:Display: Running engine for game: PTSD
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(1211149553) SRandInit(1211149553).
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.081273
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.15-CL-3348071
+LogInit: Engine Version: 4.15.1-3348071+++UE4+Release-4.15
+LogInit: Compatible Engine Version: 4.15.0-3299760+++UE4+Release-4.15
+LogInit: Net CL: 3299760
+LogDevObjectVersion: Number of dev versions registered: 14
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 8
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 14
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 22
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 12
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 3
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogInit: Compiled (64-bit): Mar 15 2017 16:52:47
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.15
+LogInit: Command line: -EpicPortal 
+LogInit: Base directory: C:/Games/UE_4.15/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.03.21-19.44.49:729][  0]LogInit: Selected Device Profile: [Windows]
+[2017.03.21-19.44.49:729][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.03.21-19.44.49:779][  0]LogInit: Computer: TSSKIES
+[2017.03.21-19.44.49:779][  0]LogInit: User: inner000
+[2017.03.21-19.44.49:779][  0]LogInit: CPU Page size=65536, Cores=4
+[2017.03.21-19.44.49:779][  0]LogInit: High frequency timer resolution =2.533207 MHz
+[2017.03.21-19.44.49:780][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
+[2017.03.21-19.44.49:780][  0]LogMemory: Platform Memory Stats for Windows
+[2017.03.21-19.44.49:780][  0]LogMemory: Process Physical Memory: 263.26 MB used, 263.26 MB peak
+[2017.03.21-19.44.49:780][  0]LogMemory: Process Virtual Memory: 262.68 MB used, 262.68 MB peak
+[2017.03.21-19.44.49:780][  0]LogMemory: Physical Memory: 4452.69 MB used,  3662.59 MB free, 8115.27 MB total
+[2017.03.21-19.44.49:780][  0]LogMemory: Virtual Memory: 645.13 MB used,  3662.59 MB free, 134217728.00 MB total
+[2017.03.21-19.44.49:853][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2017.03.21-19.44.54:624][  0]LogD3D11RHI: D3D11 adapters:
+[2017.03.21-19.44.54:673][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 860M' (Feature Level 11_0)
+[2017.03.21-19.44.54:673][  0]LogD3D11RHI:       4064/0/4057 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2017.03.21-19.44.54:679][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 4600' (Feature Level 11_0)
+[2017.03.21-19.44.54:679][  0]LogD3D11RHI:       112/0/2048 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2017.03.21-19.44.54:680][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.03.21-19.44.54:680][  0]LogD3D11RHI:       0/0/4057 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.03.21-19.44.54:680][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.03.21-19.44.54:684][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.03.21-19.44.54:684][  0]LogD3D11RHI:     GPU DeviceId: 0x1392 (for the marketing name, search the web for "GPU Device Id")
+[2017.03.21-19.44.54:684][  0]LogWindows: EnumDisplayDevices:
+[2017.03.21-19.44.54:685][  0]LogWindows:    0. 'Intel(R) HD Graphics 4600' (P:1 D:1)
+[2017.03.21-19.44.54:685][  0]LogWindows:    1. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2017.03.21-19.44.54:685][  0]LogWindows:    2. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2017.03.21-19.44.54:685][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2017.03.21-19.44.54:685][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 860M
+[2017.03.21-19.44.54:685][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2017.03.21-19.44.54:685][  0]LogD3D11RHI:      Driver Date: Unknown
+[2017.03.21-19.44.54:685][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.03.21-19.44.54:697][  0]LogD3D11RHI: Async texture creation enabled
+[2017.03.21-19.44.54:708][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2017.03.21-19.44.54:709][  0]LogShaderCompilers: Guid format shader working directory is 13 characters bigger than the processId version (../../../../../PTSD/PTSD-Project/PTSD/Intermediate/Shaders/WorkingDirectory/6176/).
+[2017.03.21-19.44.54:709][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/inner_000/AppData/Local/Temp/UnrealShaderWorkingDir/26CED4494D0B8F4C1F3C7E83E16BCEB8/'.
+[2017.03.21-19.44.54:709][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.03.21-19.44.56:483][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.03.21-19.44.56:535][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.03.21-19.44.56:587][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.03.21-19.44.56:638][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.03.21-19.44.56:690][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.03.21-19.44.56:742][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.03.21-19.44.56:793][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.03.21-19.44.56:846][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.03.21-19.44.56:888][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.03.21-19.44.56:938][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.03.21-19.44.56:988][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.03.21-19.44.57:038][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.03.21-19.44.57:088][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.03.21-19.44.57:138][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.03.21-19.44.57:188][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.03.21-19.44.57:288][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.03.21-19.44.57:288][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.03.21-19.44.57:323][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.03.21-19.44.57:415][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.03.21-19.44.57:449][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.03.21-19.44.57:498][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.03.21-19.44.57:549][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.03.21-19.44.57:598][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.03.21-19.44.57:649][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.03.21-19.44.57:649][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.03.21-19.44.58:055][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.03.21-19.44.58:114][  0]LogDerivedDataCache: Loaded boot cache 0.06s 52MB C:/Users/inner_000/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.03.21-19.44.58:115][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/inner_000/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc
+[2017.03.21-19.44.58:115][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../PTSD/PTSD-Project/PTSD/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.03.21-19.44.58:115][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.03.21-19.44.58:115][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../PTSD/PTSD-Project/PTSD/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.03.21-19.44.58:115][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.03.21-19.44.58:134][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.03.21-19.44.58:145][  0]LogDerivedDataCache: Using Local data cache path C:/Users/inner_000/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.03.21-19.44.58:155][  0]LogSlate: Using Freetype 2.6.0
+[2017.03.21-19.44.58:156][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.03.21-19.44.58:156][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.03.21-19.44.58:423][  0]LogInit: Selected Device Profile: [Windows]
+[2017.03.21-19.44.58:425][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.03.21-19.44.58:621][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.03.21-19.44.58:661][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.03.21-19.44.58:704][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.03.21-19.44.58:704][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.03.21-19.44.58:704][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.03.21-19.44.59:216][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3299760, ProjectName: ptsd, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 1176372723
+[2017.03.21-19.44.59:260][  0]LogAssetRegistry: FAssetRegistry took 0.0222 seconds to start up
+[2017.03.21-19.44.59:303][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.023285 seconds
+[2017.03.21-19.44.59:309][  0]LogUObjectArray: 32493 objects as part of root set at end of initial load.
+[2017.03.21-19.44.59:309][  0]LogUObjectAllocator: 7077032 out of 0 bytes used by permanent object pool.
+[2017.03.21-19.44.59:309][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.03.21-19.44.59:370][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.03.21-19.45.00:848][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.03.21-19.45.00:886][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.03.21-19.45.01:306][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.03.21-19.45.01:653][  0]SourceControl: Info Source control is disabled
+[2017.03.21-19.45.01:682][  0]SourceControl: Info Source control is disabled
+[2017.03.21-19.45.01:730][  0]SourceControl: Info Source control is disabled
+[2017.03.21-19.45.01:772][  0]SourceControl: Info Source control is disabled
+[2017.03.21-19.45.02:914][  0]LogEngine: Initializing Engine...
+[2017.03.21-19.45.02:933][  0]LogHMD: Failed to initialize OpenVR with code 108
+[2017.03.21-19.45.03:141][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.03.21-19.45.03:147][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.21-19.45.03:171][  0]LogInit: FAudioDevice initialized.
+[2017.03.21-19.45.03:204][  0]LogDerivedDataCache: Saved boot cache 0.03s 50MB C:/Users/inner_000/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.03.21-19.45.03:216][  0]LogInit: Texture streaming: Enabled
+[2017.03.21-19.45.03:303][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.03.21-19.45.03:385][  0]LogInit: Transaction tracking system initialized
+[2017.03.21-19.45.03:696][  0]BlueprintLog: New page: Editor Load
+[2017.03.21-19.45.04:495][  0]LocalizationService: Info Localization service is disabled
+[2017.03.21-19.45.05:105][  0]LogConsoleResponse:Display: 
+[2017.03.21-19.45.05:227][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.03.21-19.45.05:227][  0]LogCook:Display: Mobile HDR setting 0
+[2017.03.21-19.45.05:909][  0]LogFileCache: Scanning file cache for directory 'C:/PTSD/PTSD-Project/PTSD/Content/' took 0.01s
+[2017.03.21-19.45.06:178][  0]SourceControl: Info Source control is disabled
+[2017.03.21-19.45.06:178][  0]Cmd: MAP LOAD FILE="../../../Engine/Content/Maps/Templates/Template_Default.umap" TEMPLATE=1 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.03.21-19.45.06:179][  0]LightingResults: New page: Lighting Build
+[2017.03.21-19.45.06:217][  0]MapCheck: New page: Map Check
+[2017.03.21-19.45.06:217][  0]LightingResults: New page: Lighting Build
+[2017.03.21-19.45.06:404][  0]LogAIModule: Creating AISystem for world Untitled_1
+[2017.03.21-19.45.06:422][  0]LogActorComponent: RegisterComponentWithWorld: (/Temp/Untitled_1.Untitled_1:PersistentLevel.WorldSettings_1.StaticMeshComponent0) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.03.21-19.45.06:426][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.03.21-19.45.06:430][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.03.21-19.45.06:468][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 37.348ms to complete.
+[2017.03.21-19.45.06:468][  0]LogFileHelpers: Loading map 'Template_Default' took 0.290
+[2017.03.21-19.45.06:816][  0]LogCollectionManager: Loaded 0 collections in 0.001921 seconds
+[2017.03.21-19.45.06:889][  0]LogFileCache: Scanning file cache for directory 'C:/PTSD/PTSD-Project/PTSD/Saved/Collections/' took 0.01s
+[2017.03.21-19.45.06:889][  0]LogFileCache: Scanning file cache for directory 'C:/PTSD/PTSD-Project/PTSD/Content/Developers/inner000/Collections/' took 0.01s
+[2017.03.21-19.45.06:889][  0]LogFileCache: Scanning file cache for directory 'C:/PTSD/PTSD-Project/PTSD/Content/Collections/' took 0.01s
+[2017.03.21-19.45.06:889][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2017.03.21-19.45.06:898][  0]LogContentBrowser: Native class hierarchy populated in 0.0087 seconds. Added 2246 classes and 455 folders.
+[2017.03.21-19.45.06:901][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.03.21-19.45.06:901][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.03.21-19.45.06:958][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2017.03.21-19.45.07:878][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2017.03.21-19.45.07:919][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.03.21-19.45.07:925][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.03.21-19.45.07:991][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
+[2017.03.21-19.45.07:992][  0]LogLoad: (Engine Initialization) Total time: 21.20 seconds
+[2017.03.21-19.45.07:992][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.08 seconds
+[2017.03.21-19.45.07:992][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.03.21-19.45.07:992][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.03.21-19.45.08:010][  0]LogOcInput: OculusInput pre-init called
+[2017.03.21-19.45.08:033][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.03.21-19.45.08:035][  0]LogSlate: Took 0.000280 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.03.21-19.45.08:040][  0]LogSlate: Took 0.000352 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.03.21-19.45.08:071][  0]LogSlate: Took 0.027361 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.03.21-19.45.08:310][  0]LogRenderer: Reallocating scene render targets to support 1212x924 NumSamples 1 (Frame:2).
+[2017.03.21-19.45.08:363][  1]LogAssetRegistry: Asset discovery search completed in 9.1257 seconds
+[2017.03.21-19.45.08:363][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000006 seconds (found 0 objects)
+[2017.03.21-19.45.08:363][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000019 seconds (updated 0 objects)
+[2017.03.21-19.45.09:081][ 35]LogSlate: Took 0.057881 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.03.21-19.45.12:331][227]LogSlate: Took 0.000191 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.03.21-19.45.19:439][627]LogSlate: Took 0.000132 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.03.21-19.45.19:661][627]LogAIModule: Creating AISystem for world Prototype
+[2017.03.21-19.45.19:867][627]Cmd: MAP LOAD FILE="../../../../../PTSD/PTSD-Project/PTSD/Content/Prototype.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.03.21-19.45.19:867][627]LightingResults: New page: Lighting Build
+[2017.03.21-19.45.19:868][627]LoadErrors: New page: Loading map: Prototype.umap
+[2017.03.21-19.45.19:869][627]MapCheck: New page: Map Check
+[2017.03.21-19.45.19:869][627]LightingResults: New page: Lighting Build
+[2017.03.21-19.45.20:186][627]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.03.21-19.45.20:239][627]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.03.21-19.45.20:278][627]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 39.23ms to complete.
+[2017.03.21-19.45.20:278][627]LogFileHelpers: Loading map 'Prototype' took 0.462
+[2017.03.21-19.45.29:043][108]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.21-19.45.29:109][108]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.21-19.45.29:201][108]PIE: New page: PIE session: Prototype (Mar 21, 2017, 11:45:29 AM)
+[2017.03.21-19.45.29:246][108]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Prototype
+[2017.03.21-19.45.29:318][108]LogPlayLevel: PIE: StaticDuplicateObject took: (0.071944s)
+[2017.03.21-19.45.29:319][108]LogAIModule: Creating AISystem for world Prototype
+[2017.03.21-19.45.29:319][108]LogPlayLevel: PIE: World Init took: (0.000915s)
+[2017.03.21-19.45.29:333][108]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Prototype.Prototype to /Game/UEDPIE_0_Prototype.Prototype (0.087300s)
+[2017.03.21-19.45.29:374][108]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.21-19.45.29:382][108]LogInit: FAudioDevice initialized.
+[2017.03.21-19.45.29:975][108]LogLoad: Game class is 'VRGameMode_C'
+[2017.03.21-19.45.30:091][108]LogWorld: Bringing World /Game/UEDPIE_0_Prototype.Prototype up for play (max tick rate 60) at 2017.03.21-15.45.30
+[2017.03.21-19.45.30:192][108]LogWorld: Bringing up level for play took: 0.102421
+[2017.03.21-19.45.30:630][108]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0007 seconds. Added 11 classes and 0 folders.
+[2017.03.21-19.45.30:837][108]PIE: Info Play in editor start time for /Game/UEDPIE_0_Prototype 2.725
+[2017.03.21-20.00.37:293][460]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2017.03.21-20.00.43:866][740]LogSlate: Took 0.000226 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.03.21-20.00.44:614][740]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0011 seconds. Added 112 classes and 0 folders.
+[2017.03.21-20.00.46:736][740]LogSlate: Took 0.019576 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2017.03.21-20.00.52:913][ 31]LogSlate: Took 0.023824 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2017.03.21-20.03.00:650][475]BlueprintLog: New page: Compile FAKEVR
+[2017.03.21-20.03.01:929][498]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FAKEVR" FILE="../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset" SILENT=true
+[2017.03.21-20.03.02:083][498]LogSavePackage: Save=126.49ms
+[2017.03.21-20.03.02:083][498]LogSavePackage: Moving '../../../../../PTSD/PTSD-Project/PTSD/Saved/FAKEVRACD984DA427787602697E59C2AE5AAA4.tmp' to '../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset'
+[2017.03.21-20.03.02:087][498]LogSavePackage:Display: Finished SavePackage ../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset
+[2017.03.21-20.03.02:556][525]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.21-20.03.02:576][525]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.21-20.03.02:577][525]PIE: New page: PIE session: Prototype (Mar 21, 2017, 12:03:02 PM)
+[2017.03.21-20.03.02:577][525]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Prototype
+[2017.03.21-20.03.02:580][525]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003743s)
+[2017.03.21-20.03.02:581][525]LogAIModule: Creating AISystem for world Prototype
+[2017.03.21-20.03.02:581][525]LogPlayLevel: PIE: World Init took: (0.000877s)
+[2017.03.21-20.03.02:582][525]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Prototype.Prototype to /Game/UEDPIE_0_Prototype.Prototype (0.004836s)
+[2017.03.21-20.03.02:597][525]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.21-20.03.02:607][525]LogInit: FAudioDevice initialized.
+[2017.03.21-20.03.02:725][525]LogLoad: Game class is 'VRGameMode_C'
+[2017.03.21-20.03.02:729][525]LogWorld: Bringing World /Game/UEDPIE_0_Prototype.Prototype up for play (max tick rate 60) at 2017.03.21-16.03.02
+[2017.03.21-20.03.02:730][525]LogWorld: Bringing up level for play took: 0.003390
+[2017.03.21-20.03.02:736][525]PIE: Info Play in editor start time for /Game/UEDPIE_0_Prototype 0.623
+[2017.03.21-20.03.02:764][525]LogRenderer: Reallocating scene render targets to support 1292x924 NumSamples 1 (Frame:54144).
+[2017.03.21-20.04.17:390][857]BlueprintLog: New page: Compile FAKEVR
+[2017.03.21-20.04.18:584][889]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FAKEVR" FILE="../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset" SILENT=true
+[2017.03.21-20.04.18:639][889]LogSavePackage: Save=49.82ms
+[2017.03.21-20.04.18:639][889]LogSavePackage: Moving '../../../../../PTSD/PTSD-Project/PTSD/Saved/FAKEVR2BA9939F48C177E74F08F19BEAB713EB.tmp' to '../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset'
+[2017.03.21-20.04.18:641][889]LogSavePackage:Display: Finished SavePackage ../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset
+[2017.03.21-20.04.22:248][105]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.21-20.04.22:262][105]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.21-20.04.22:263][105]PIE: New page: PIE session: Prototype (Mar 21, 2017, 12:04:22 PM)
+[2017.03.21-20.04.22:263][105]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Prototype
+[2017.03.21-20.04.22:265][105]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002465s)
+[2017.03.21-20.04.22:266][105]LogAIModule: Creating AISystem for world Prototype
+[2017.03.21-20.04.22:266][105]LogPlayLevel: PIE: World Init took: (0.000797s)
+[2017.03.21-20.04.22:266][105]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Prototype.Prototype to /Game/UEDPIE_0_Prototype.Prototype (0.003475s)
+[2017.03.21-20.04.22:284][105]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.21-20.04.22:293][105]LogInit: FAudioDevice initialized.
+[2017.03.21-20.04.22:339][105]LogLoad: Game class is 'VRGameMode_C'
+[2017.03.21-20.04.22:341][105]LogWorld: Bringing World /Game/UEDPIE_0_Prototype.Prototype up for play (max tick rate 60) at 2017.03.21-16.04.22
+[2017.03.21-20.04.22:341][105]LogWorld: Bringing up level for play took: 0.001709
+[2017.03.21-20.04.22:347][105]PIE: Info Play in editor start time for /Game/UEDPIE_0_Prototype 0.235
+[2017.03.21-20.04.26:029][168]LogScript:Warning: Runaway loop detected (over 1,000,000 iterations) - see log for stack trace
+	FAKEVR_C /Game/UEDPIE_0_Prototype.Prototype:PersistentLevel.FAKEVR_C_0
+	Function /Game/FAKEVR.FAKEVR_C:ExecuteUbergraph_FAKEVR:0035
+[2017.03.21-20.04.26:039][168]PIE:Error: Error Infinite Loop detected in  FAKEVR , asserted during  WhileLoop with the following  Call Stack
+[2017.03.21-20.08.42:673][331]BlueprintLog: New page: Compile FAKEVR
+[2017.03.21-20.08.43:778][354]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FAKEVR" FILE="../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset" SILENT=true
+[2017.03.21-20.08.43:844][354]LogSavePackage: Save=55.76ms
+[2017.03.21-20.08.43:844][354]LogSavePackage: Moving '../../../../../PTSD/PTSD-Project/PTSD/Saved/FAKEVRB8429B08441F4B53F0FBE3AF2B921B82.tmp' to '../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset'
+[2017.03.21-20.08.43:846][354]LogSavePackage:Display: Finished SavePackage ../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset
+[2017.03.21-20.11.16:291][354]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FAKEVR" FILE="../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset" SILENT=true
+[2017.03.21-20.11.16:356][354]LogSavePackage: Save=60.11ms
+[2017.03.21-20.11.16:356][354]LogSavePackage: Moving '../../../../../PTSD/PTSD-Project/PTSD/Saved/FAKEVRFEC80A4849F8167022B57FB8EA033DE0.tmp' to '../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset'
+[2017.03.21-20.11.16:358][354]LogSavePackage:Display: Finished SavePackage ../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset
+[2017.03.21-20.11.18:804][501]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.21-20.11.18:821][501]BlueprintLog: New page: Pre-Play auto-recompile
+[2017.03.21-20.11.18:821][501]LogPlayLevel: [PlayLevel] Compiling FAKEVR before play...
+[2017.03.21-20.11.18:915][501]LogBlueprint:Error: [Compiler FAKEVR] Error This blueprint (self) is not a SceneComponent, therefore ' Target ' must have a connection.
+[2017.03.21-20.11.19:070][501]LogBlueprint:Warning: [Compiler FAKEVR] Warning [1592.27] Compile of FAKEVR failed. 1 Fatal Issue(s) 0 Warning(s) [in 228 ms] (/Game/FAKEVR.FAKEVR)
+[2017.03.21-20.11.19:070][501]LogBlueprint:Warning: [Compiler FAKEVR] Warning [1592.27] Compile of FAKEVR failed. 1 Fatal Issue(s) 1 Warning(s) [in 0 ms] (/Game/FAKEVR.FAKEVR)
+[2017.03.21-20.11.19:070][501]LogBlueprint:Warning: [Compiler FAKEVR] Warning [1592.27] Compile of FAKEVR failed. 1 Fatal Issue(s) 2 Warning(s) [in 0 ms] (/Game/FAKEVR.FAKEVR)
+[2017.03.21-20.11.19:070][501]LogBlueprint:Warning: [Compiler FAKEVR] Warning [1592.27] Compile of FAKEVR failed. 1 Fatal Issue(s) 3 Warning(s) [in 0 ms] (/Game/FAKEVR.FAKEVR)
+[2017.03.21-20.11.19:074][501]LogBlueprint:Warning: [Compiler FAKEVR] Warning [1592.28] Compile of FAKEVR failed. 1 Fatal Issue(s) 4 Warning(s) [in 3 ms] (/Game/FAKEVR.FAKEVR)
+[2017.03.21-20.11.19:074][501]LogBlueprint:Warning: [Compiler FAKEVR] Warning [1592.28] Compile of FAKEVR failed. 1 Fatal Issue(s) 5 Warning(s) [in 0 ms] (/Game/FAKEVR.FAKEVR)
+[2017.03.21-20.11.19:098][501]LogPlayLevel: PlayLevel: Blueprint regeneration took 276 ms (1 blueprints)
+[2017.03.21-20.11.19:098][501]BlueprintLog: Info Blueprint FAKEVR failed to compile
+[2017.03.21-20.11.30:459][ 58]BlueprintLog: New page: Compile FAKEVR
+[2017.03.21-20.11.31:201][ 81]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FAKEVR" FILE="../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset" SILENT=true
+[2017.03.21-20.11.31:264][ 81]LogSavePackage: Save=60.59ms
+[2017.03.21-20.11.31:264][ 81]LogSavePackage: Moving '../../../../../PTSD/PTSD-Project/PTSD/Saved/FAKEVRF9FC8D8C4A27C7944DFBC094E56504C3.tmp' to '../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset'
+[2017.03.21-20.11.31:266][ 81]LogSavePackage:Display: Finished SavePackage ../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset
+[2017.03.21-20.11.32:116][131]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.21-20.11.32:132][131]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.21-20.11.32:133][131]PIE: New page: PIE session: Prototype (Mar 21, 2017, 12:11:32 PM)
+[2017.03.21-20.11.32:133][131]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Prototype
+[2017.03.21-20.11.32:136][131]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003371s)
+[2017.03.21-20.11.32:137][131]LogAIModule: Creating AISystem for world Prototype
+[2017.03.21-20.11.32:137][131]LogPlayLevel: PIE: World Init took: (0.001316s)
+[2017.03.21-20.11.32:138][131]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Prototype.Prototype to /Game/UEDPIE_0_Prototype.Prototype (0.004927s)
+[2017.03.21-20.11.32:157][131]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.21-20.11.32:167][131]LogInit: FAudioDevice initialized.
+[2017.03.21-20.11.32:211][131]LogLoad: Game class is 'VRGameMode_C'
+[2017.03.21-20.11.32:215][131]LogWorld: Bringing World /Game/UEDPIE_0_Prototype.Prototype up for play (max tick rate 60) at 2017.03.21-16.11.32
+[2017.03.21-20.11.32:215][131]LogWorld: Bringing up level for play took: 0.002274
+[2017.03.21-20.11.32:221][131]PIE: Info Play in editor start time for /Game/UEDPIE_0_Prototype 0.109
+[2017.03.21-20.12.28:758][490]BlueprintLog: New page: Compile FAKEVR
+[2017.03.21-20.12.29:661][526]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FAKEVR" FILE="../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset" SILENT=true
+[2017.03.21-20.12.29:721][526]LogSavePackage: Save=56.23ms
+[2017.03.21-20.12.29:721][526]LogSavePackage: Moving '../../../../../PTSD/PTSD-Project/PTSD/Saved/FAKEVRFB3891704165B41FC5866E8CE2BB3659.tmp' to '../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset'
+[2017.03.21-20.12.29:723][526]LogSavePackage:Display: Finished SavePackage ../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset
+[2017.03.21-20.12.30:287][559]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.21-20.12.30:303][559]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.21-20.12.30:304][559]PIE: New page: PIE session: Prototype (Mar 21, 2017, 12:12:30 PM)
+[2017.03.21-20.12.30:304][559]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Prototype
+[2017.03.21-20.12.30:306][559]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002366s)
+[2017.03.21-20.12.30:307][559]LogAIModule: Creating AISystem for world Prototype
+[2017.03.21-20.12.30:307][559]LogPlayLevel: PIE: World Init took: (0.001050s)
+[2017.03.21-20.12.30:307][559]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Prototype.Prototype to /Game/UEDPIE_0_Prototype.Prototype (0.003623s)
+[2017.03.21-20.12.30:323][559]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.21-20.12.30:332][559]LogInit: FAudioDevice initialized.
+[2017.03.21-20.12.30:377][559]LogLoad: Game class is 'VRGameMode_C'
+[2017.03.21-20.12.30:379][559]LogWorld: Bringing World /Game/UEDPIE_0_Prototype.Prototype up for play (max tick rate 60) at 2017.03.21-16.12.30
+[2017.03.21-20.12.30:380][559]LogWorld: Bringing up level for play took: 0.001587
+[2017.03.21-20.12.30:387][559]PIE: Info Play in editor start time for /Game/UEDPIE_0_Prototype 0.275
+[2017.03.21-20.12.39:069][ 70]LogEditorTransaction: Undo Move Nodes
+[2017.03.21-20.12.39:707][ 92]LogEditorTransaction: Undo Delete current selection
+[2017.03.21-20.12.40:323][118]LogEditorTransaction: Undo Delete current selection
+[2017.03.21-20.13.30:521][ 56]BlueprintLog: New page: Compile FAKEVR
+[2017.03.21-20.13.31:246][ 68]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FAKEVR" FILE="../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset" SILENT=true
+[2017.03.21-20.13.31:310][ 68]LogSavePackage: Save=59.63ms
+[2017.03.21-20.13.31:310][ 68]LogSavePackage: Moving '../../../../../PTSD/PTSD-Project/PTSD/Saved/FAKEVRC707AE85433C0C6C67FF1A83B4F1DCC1.tmp' to '../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset'
+[2017.03.21-20.13.31:312][ 68]LogSavePackage:Display: Finished SavePackage ../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset
+[2017.03.21-20.13.31:809][ 98]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.21-20.13.31:825][ 98]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.21-20.13.31:825][ 98]PIE: New page: PIE session: Prototype (Mar 21, 2017, 12:13:31 PM)
+[2017.03.21-20.13.31:825][ 98]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Prototype
+[2017.03.21-20.13.31:827][ 98]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002502s)
+[2017.03.21-20.13.31:828][ 98]LogAIModule: Creating AISystem for world Prototype
+[2017.03.21-20.13.31:828][ 98]LogPlayLevel: PIE: World Init took: (0.000846s)
+[2017.03.21-20.13.31:828][ 98]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Prototype.Prototype to /Game/UEDPIE_0_Prototype.Prototype (0.003573s)
+[2017.03.21-20.13.31:846][ 98]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.21-20.13.31:857][ 98]LogInit: FAudioDevice initialized.
+[2017.03.21-20.13.31:903][ 98]LogLoad: Game class is 'VRGameMode_C'
+[2017.03.21-20.13.31:905][ 98]LogWorld: Bringing World /Game/UEDPIE_0_Prototype.Prototype up for play (max tick rate 60) at 2017.03.21-16.13.31
+[2017.03.21-20.13.31:905][ 98]LogWorld: Bringing up level for play took: 0.001654
+[2017.03.21-20.13.31:912][ 98]PIE: Info Play in editor start time for /Game/UEDPIE_0_Prototype -0.201
+[2017.03.21-20.13.58:360][669]BlueprintLog: New page: Compile FAKEVR
+[2017.03.21-20.13.59:212][691]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FAKEVR" FILE="../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset" SILENT=true
+[2017.03.21-20.13.59:280][691]LogSavePackage: Save=61.04ms
+[2017.03.21-20.13.59:280][691]LogSavePackage: Moving '../../../../../PTSD/PTSD-Project/PTSD/Saved/FAKEVRBB8801924B5C3B4620B57B85DB9A5A02.tmp' to '../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset'
+[2017.03.21-20.13.59:282][691]LogSavePackage:Display: Finished SavePackage ../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset
+[2017.03.21-20.13.59:863][726]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.21-20.13.59:879][726]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.21-20.13.59:879][726]PIE: New page: PIE session: Prototype (Mar 21, 2017, 12:13:59 PM)
+[2017.03.21-20.13.59:879][726]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Prototype
+[2017.03.21-20.13.59:881][726]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002316s)
+[2017.03.21-20.13.59:882][726]LogAIModule: Creating AISystem for world Prototype
+[2017.03.21-20.13.59:882][726]LogPlayLevel: PIE: World Init took: (0.000783s)
+[2017.03.21-20.13.59:882][726]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Prototype.Prototype to /Game/UEDPIE_0_Prototype.Prototype (0.003306s)
+[2017.03.21-20.13.59:900][726]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.21-20.13.59:909][726]LogInit: FAudioDevice initialized.
+[2017.03.21-20.13.59:952][726]LogLoad: Game class is 'VRGameMode_C'
+[2017.03.21-20.13.59:954][726]LogWorld: Bringing World /Game/UEDPIE_0_Prototype.Prototype up for play (max tick rate 60) at 2017.03.21-16.13.59
+[2017.03.21-20.13.59:955][726]LogWorld: Bringing up level for play took: 0.002229
+[2017.03.21-20.13.59:961][726]PIE: Info Play in editor start time for /Game/UEDPIE_0_Prototype -0.151
+[2017.03.21-20.15.03:251][430]BlueprintLog: New page: Compile FAKEVR
+[2017.03.21-20.15.03:288][430]LogBlueprint:Error: [Compiler FAKEVR] Error This blueprint (self) is not a SceneComponent, therefore ' Target ' must have a connection.
+[2017.03.21-20.15.03:288][430]LogBlueprint:Error: [Compiler FAKEVR] Error This blueprint (self) is not a SceneComponent, therefore ' Target ' must have a connection.
+[2017.03.21-20.15.03:288][430]LogBlueprint:Error: [Compiler FAKEVR] Error This blueprint (self) is not a SceneComponent, therefore ' Target ' must have a connection.
+[2017.03.21-20.15.03:288][430]LogBlueprint:Error: [Compiler FAKEVR] Error This blueprint (self) is not a SceneComponent, therefore ' Target ' must have a connection.
+[2017.03.21-20.15.03:621][430]BlueprintEditorCompileResults:Error: Error This blueprint (self) is not a SceneComponent, therefore ' Target ' must have a connection.
+[2017.03.21-20.15.03:621][430]BlueprintEditorCompileResults:Error: Error This blueprint (self) is not a SceneComponent, therefore ' Target ' must have a connection.
+[2017.03.21-20.15.03:621][430]BlueprintEditorCompileResults:Error: Error This blueprint (self) is not a SceneComponent, therefore ' Target ' must have a connection.
+[2017.03.21-20.15.03:621][430]BlueprintEditorCompileResults:Error: Error This blueprint (self) is not a SceneComponent, therefore ' Target ' must have a connection.
+[2017.03.21-20.15.03:636][430]LogBlueprint:Warning: [Compiler FAKEVR] Warning [1816.84] Compile of FAKEVR failed. 4 Fatal Issue(s) 0 Warning(s) [in 384 ms] (/Game/FAKEVR.FAKEVR)
+[2017.03.21-20.15.04:336][455]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FAKEVR" FILE="../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset" SILENT=true
+[2017.03.21-20.15.04:394][455]LogSavePackage: Save=54.63ms
+[2017.03.21-20.15.04:394][455]LogSavePackage: Moving '../../../../../PTSD/PTSD-Project/PTSD/Saved/FAKEVRE2608E784E8864DF2895F3A40AB7B3CE.tmp' to '../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset'
+[2017.03.21-20.15.04:396][455]LogSavePackage:Display: Finished SavePackage ../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset
+[2017.03.21-20.15.20:373][396]BlueprintLog: New page: Compile FAKEVR
+[2017.03.21-20.15.21:383][435]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FAKEVR" FILE="../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset" SILENT=true
+[2017.03.21-20.15.21:446][435]LogSavePackage: Save=60.03ms
+[2017.03.21-20.15.21:446][435]LogSavePackage: Moving '../../../../../PTSD/PTSD-Project/PTSD/Saved/FAKEVR8CBC146E4AE898A431196C9C04A6E706.tmp' to '../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset'
+[2017.03.21-20.15.21:447][435]LogSavePackage:Display: Finished SavePackage ../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset
+[2017.03.21-20.15.21:878][461]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.21-20.15.21:895][461]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.21-20.15.21:895][461]PIE: New page: PIE session: Prototype (Mar 21, 2017, 12:15:21 PM)
+[2017.03.21-20.15.21:895][461]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Prototype
+[2017.03.21-20.15.21:898][461]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002551s)
+[2017.03.21-20.15.21:898][461]LogAIModule: Creating AISystem for world Prototype
+[2017.03.21-20.15.21:898][461]LogPlayLevel: PIE: World Init took: (0.000678s)
+[2017.03.21-20.15.21:899][461]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Prototype.Prototype to /Game/UEDPIE_0_Prototype.Prototype (0.003407s)
+[2017.03.21-20.15.21:915][461]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.21-20.15.21:924][461]LogInit: FAudioDevice initialized.
+[2017.03.21-20.15.21:967][461]LogLoad: Game class is 'VRGameMode_C'
+[2017.03.21-20.15.21:970][461]LogWorld: Bringing World /Game/UEDPIE_0_Prototype.Prototype up for play (max tick rate 60) at 2017.03.21-16.15.21
+[2017.03.21-20.15.21:971][461]LogWorld: Bringing up level for play took: 0.001653
+[2017.03.21-20.15.21:981][461]PIE: Info Play in editor start time for /Game/UEDPIE_0_Prototype -0.132
+[2017.03.21-20.17.52:820][454]BlueprintLog: New page: Compile FAKEVR
+[2017.03.21-20.17.53:635][476]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FAKEVR" FILE="../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset" SILENT=true
+[2017.03.21-20.17.53:704][476]LogSavePackage: Save=65.02ms
+[2017.03.21-20.17.53:704][476]LogSavePackage: Moving '../../../../../PTSD/PTSD-Project/PTSD/Saved/FAKEVR1B7645B04BF58E37A1166EA309BA54C6.tmp' to '../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset'
+[2017.03.21-20.17.53:705][476]LogSavePackage:Display: Finished SavePackage ../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset
+[2017.03.21-20.17.54:402][517]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.21-20.17.54:419][517]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.21-20.17.54:420][517]PIE: New page: PIE session: Prototype (Mar 21, 2017, 12:17:54 PM)
+[2017.03.21-20.17.54:420][517]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Prototype
+[2017.03.21-20.17.54:423][517]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002870s)
+[2017.03.21-20.17.54:423][517]LogAIModule: Creating AISystem for world Prototype
+[2017.03.21-20.17.54:424][517]LogPlayLevel: PIE: World Init took: (0.001189s)
+[2017.03.21-20.17.54:424][517]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Prototype.Prototype to /Game/UEDPIE_0_Prototype.Prototype (0.004697s)
+[2017.03.21-20.17.54:444][517]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.21-20.17.54:453][517]LogInit: FAudioDevice initialized.
+[2017.03.21-20.17.54:496][517]LogLoad: Game class is 'VRGameMode_C'
+[2017.03.21-20.17.54:499][517]LogWorld: Bringing World /Game/UEDPIE_0_Prototype.Prototype up for play (max tick rate 60) at 2017.03.21-16.17.54
+[2017.03.21-20.17.54:499][517]LogWorld: Bringing up level for play took: 0.001582
+[2017.03.21-20.17.54:507][517]PIE: Info Play in editor start time for /Game/UEDPIE_0_Prototype 0.394
+[2017.03.21-20.18.51:209][892]BlueprintLog: New page: Compile FAKEVR
+[2017.03.21-20.18.52:103][918]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FAKEVR" FILE="../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset" SILENT=true
+[2017.03.21-20.18.52:168][918]LogSavePackage: Save=60.60ms
+[2017.03.21-20.18.52:168][918]LogSavePackage: Moving '../../../../../PTSD/PTSD-Project/PTSD/Saved/FAKEVR0F4BC1934466EDA2E3A4C69983836D3D.tmp' to '../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset'
+[2017.03.21-20.18.52:170][918]LogSavePackage:Display: Finished SavePackage ../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset
+[2017.03.21-20.18.53:282][984]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.21-20.18.53:299][984]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.21-20.18.53:299][984]PIE: New page: PIE session: Prototype (Mar 21, 2017, 12:18:53 PM)
+[2017.03.21-20.18.53:299][984]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Prototype
+[2017.03.21-20.18.53:302][984]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002167s)
+[2017.03.21-20.18.53:302][984]LogAIModule: Creating AISystem for world Prototype
+[2017.03.21-20.18.53:302][984]LogPlayLevel: PIE: World Init took: (0.000752s)
+[2017.03.21-20.18.53:303][984]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Prototype.Prototype to /Game/UEDPIE_0_Prototype.Prototype (0.003129s)
+[2017.03.21-20.18.53:321][984]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.21-20.18.53:330][984]LogInit: FAudioDevice initialized.
+[2017.03.21-20.18.53:380][984]LogLoad: Game class is 'VRGameMode_C'
+[2017.03.21-20.18.53:383][984]LogWorld: Bringing World /Game/UEDPIE_0_Prototype.Prototype up for play (max tick rate 60) at 2017.03.21-16.18.53
+[2017.03.21-20.18.53:383][984]LogWorld: Bringing up level for play took: 0.001549
+[2017.03.21-20.18.53:394][984]PIE: Info Play in editor start time for /Game/UEDPIE_0_Prototype -0.718
+[2017.03.21-20.19.36:874][562]BlueprintLog: New page: Compile FAKEVR
+[2017.03.21-20.19.37:767][585]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FAKEVR" FILE="../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset" SILENT=true
+[2017.03.21-20.19.37:837][585]LogSavePackage: Save=61.46ms
+[2017.03.21-20.19.37:837][585]LogSavePackage: Moving '../../../../../PTSD/PTSD-Project/PTSD/Saved/FAKEVR2BB5DFCC4C978A70D224129AE9E56B17.tmp' to '../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset'
+[2017.03.21-20.19.37:839][585]LogSavePackage:Display: Finished SavePackage ../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset
+[2017.03.21-20.19.38:300][612]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.21-20.19.38:317][612]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.21-20.19.38:317][612]PIE: New page: PIE session: Prototype (Mar 21, 2017, 12:19:38 PM)
+[2017.03.21-20.19.38:317][612]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Prototype
+[2017.03.21-20.19.38:320][612]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002733s)
+[2017.03.21-20.19.38:321][612]LogAIModule: Creating AISystem for world Prototype
+[2017.03.21-20.19.38:321][612]LogPlayLevel: PIE: World Init took: (0.000779s)
+[2017.03.21-20.19.38:321][612]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Prototype.Prototype to /Game/UEDPIE_0_Prototype.Prototype (0.003720s)
+[2017.03.21-20.19.38:339][612]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.21-20.19.38:349][612]LogInit: FAudioDevice initialized.
+[2017.03.21-20.19.38:396][612]LogLoad: Game class is 'VRGameMode_C'
+[2017.03.21-20.19.38:398][612]LogWorld: Bringing World /Game/UEDPIE_0_Prototype.Prototype up for play (max tick rate 60) at 2017.03.21-16.19.38
+[2017.03.21-20.19.38:398][612]LogWorld: Bringing up level for play took: 0.001634
+[2017.03.21-20.19.38:409][612]PIE: Info Play in editor start time for /Game/UEDPIE_0_Prototype 0.297
+[2017.03.21-20.19.51:580][393]BlueprintLog: New page: Compile FAKEVR
+[2017.03.21-20.19.52:437][414]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FAKEVR" FILE="../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset" SILENT=true
+[2017.03.21-20.19.52:503][414]LogSavePackage: Save=62.87ms
+[2017.03.21-20.19.52:503][414]LogSavePackage: Moving '../../../../../PTSD/PTSD-Project/PTSD/Saved/FAKEVR47BF6D3245DF7D259E8756B1A2160DC4.tmp' to '../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset'
+[2017.03.21-20.19.52:505][414]LogSavePackage:Display: Finished SavePackage ../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset
+[2017.03.21-20.19.52:903][437]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.21-20.19.52:920][437]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.21-20.19.52:920][437]PIE: New page: PIE session: Prototype (Mar 21, 2017, 12:19:52 PM)
+[2017.03.21-20.19.52:920][437]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Prototype
+[2017.03.21-20.19.52:923][437]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002523s)
+[2017.03.21-20.19.52:924][437]LogAIModule: Creating AISystem for world Prototype
+[2017.03.21-20.19.52:924][437]LogPlayLevel: PIE: World Init took: (0.000970s)
+[2017.03.21-20.19.52:924][437]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Prototype.Prototype to /Game/UEDPIE_0_Prototype.Prototype (0.003747s)
+[2017.03.21-20.19.52:941][437]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.21-20.19.52:950][437]LogInit: FAudioDevice initialized.
+[2017.03.21-20.19.52:995][437]LogLoad: Game class is 'VRGameMode_C'
+[2017.03.21-20.19.52:998][437]LogWorld: Bringing World /Game/UEDPIE_0_Prototype.Prototype up for play (max tick rate 60) at 2017.03.21-16.19.52
+[2017.03.21-20.19.52:998][437]LogWorld: Bringing up level for play took: 0.001574
+[2017.03.21-20.19.53:009][437]PIE: Info Play in editor start time for /Game/UEDPIE_0_Prototype 0.896
+[2017.03.21-20.20.10:129][455]LogEditorTransaction: Undo Create Pin Link
+[2017.03.21-20.20.10:344][456]LogEditorTransaction: Undo Break Pin Link
+[2017.03.21-20.20.10:969][481]LogEditorTransaction: Undo Create Pin Link
+[2017.03.21-20.20.11:182][482]LogEditorTransaction: Undo Split Struct Pin
+[2017.03.21-20.20.11:395][483]LogEditorTransaction: Undo Move Node
+[2017.03.21-20.20.11:611][484]LogEditorTransaction: Undo Add Node
+[2017.03.21-20.20.12:157][505]LogEditorTransaction: Undo Move Node
+[2017.03.21-20.20.12:518][515]LogEditorTransaction: Undo Break Pin Link
+[2017.03.21-20.20.12:728][516]LogEditorTransaction: Undo Create Pin Link
+[2017.03.21-20.20.12:940][517]LogEditorTransaction: Undo Create Pin Link
+[2017.03.21-20.20.13:551][542]LogEditorTransaction: Undo Create Pin Link
+[2017.03.21-20.20.13:891][551]LogEditorTransaction: Undo Create Pin Link
+[2017.03.21-20.20.14:201][558]LogEditorTransaction: Undo Move Node
+[2017.03.21-20.20.14:559][568]LogEditorTransaction: Undo Paste clipboard contents
+[2017.03.21-20.20.14:886][576]LogEditorTransaction: Undo Move Node
+[2017.03.21-20.20.15:288][589]LogEditorTransaction: Undo Move Node
+[2017.03.21-20.20.15:771][607]LogEditorTransaction: Undo Move Node
+[2017.03.21-20.20.16:258][625]LogEditorTransaction: Undo Move Node
+[2017.03.21-20.20.16:878][651]LogEditorTransaction: Undo Resize Node
+[2017.03.21-20.20.17:581][682]LogEditorTransaction: Undo Resize Node
+[2017.03.21-20.20.18:135][704]LogEditorTransaction: Undo Resize Node
+[2017.03.21-20.20.20:222][818]LogEditorTransaction: Undo Move Node
+[2017.03.21-20.20.20:460][821]LogEditorTransaction: Undo Create Pin Link
+[2017.03.21-20.20.20:712][825]LogEditorTransaction: Undo Create Pin Link
+[2017.03.21-20.20.21:151][840]LogEditorTransaction: Undo Add Component Nodes
+[2017.03.21-20.20.21:619][857]LogEditorTransaction: Undo Move Node
+[2017.03.21-20.20.22:120][876]LogEditorTransaction: Undo Create Pin Link
+[2017.03.21-20.20.22:709][900]LogEditorTransaction: Undo Move Node
+[2017.03.21-20.20.23:310][925]LogEditorTransaction: Undo Paste clipboard contents
+[2017.03.21-20.20.23:906][950]LogEditorTransaction: Undo Break Pin Link
+[2017.03.21-20.20.27:917][179]BlueprintLog: New page: Compile FAKEVR
+[2017.03.21-20.20.28:715][203]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FAKEVR" FILE="../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset" SILENT=true
+[2017.03.21-20.20.28:779][203]LogSavePackage: Save=60.39ms
+[2017.03.21-20.20.28:779][203]LogSavePackage: Moving '../../../../../PTSD/PTSD-Project/PTSD/Saved/FAKEVRB168B9B749F8614458D964BD56BC5EDB.tmp' to '../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset'
+[2017.03.21-20.20.28:781][203]LogSavePackage:Display: Finished SavePackage ../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset
+[2017.03.21-20.20.29:927][271]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.21-20.20.29:944][271]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.21-20.20.29:944][271]PIE: New page: PIE session: Prototype (Mar 21, 2017, 12:20:29 PM)
+[2017.03.21-20.20.29:944][271]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Prototype
+[2017.03.21-20.20.29:947][271]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002263s)
+[2017.03.21-20.20.29:947][271]LogAIModule: Creating AISystem for world Prototype
+[2017.03.21-20.20.29:948][271]LogPlayLevel: PIE: World Init took: (0.000923s)
+[2017.03.21-20.20.29:948][271]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Prototype.Prototype to /Game/UEDPIE_0_Prototype.Prototype (0.003404s)
+[2017.03.21-20.20.29:964][271]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.21-20.20.29:974][271]LogInit: FAudioDevice initialized.
+[2017.03.21-20.20.30:015][271]LogLoad: Game class is 'VRGameMode_C'
+[2017.03.21-20.20.30:018][271]LogWorld: Bringing World /Game/UEDPIE_0_Prototype.Prototype up for play (max tick rate 60) at 2017.03.21-16.20.30
+[2017.03.21-20.20.30:018][271]LogWorld: Bringing up level for play took: 0.001575
+[2017.03.21-20.20.30:029][271]PIE: Info Play in editor start time for /Game/UEDPIE_0_Prototype -0.083
+[2017.03.21-20.20.53:347][662]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.21-20.20.53:367][662]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.21-20.20.53:367][662]PIE: New page: PIE session: Prototype (Mar 21, 2017, 12:20:53 PM)
+[2017.03.21-20.20.53:367][662]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Prototype
+[2017.03.21-20.20.53:370][662]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003363s)
+[2017.03.21-20.20.53:372][662]LogAIModule: Creating AISystem for world Prototype
+[2017.03.21-20.20.53:372][662]LogPlayLevel: PIE: World Init took: (0.001662s)
+[2017.03.21-20.20.53:372][662]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Prototype.Prototype to /Game/UEDPIE_0_Prototype.Prototype (0.005370s)
+[2017.03.21-20.20.53:392][662]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.21-20.20.53:401][662]LogInit: FAudioDevice initialized.
+[2017.03.21-20.20.53:446][662]LogLoad: Game class is 'VRGameMode_C'
+[2017.03.21-20.20.53:451][662]LogWorld: Bringing World /Game/UEDPIE_0_Prototype.Prototype up for play (max tick rate 60) at 2017.03.21-16.20.53
+[2017.03.21-20.20.53:451][662]LogWorld: Bringing up level for play took: 0.004012
+[2017.03.21-20.20.53:458][662]PIE: Info Play in editor start time for /Game/UEDPIE_0_Prototype -0.654
+[2017.03.21-20.21.46:759][849]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FAKEVR" FILE="../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset" SILENT=true
+[2017.03.21-20.21.46:826][849]LogSavePackage: Save=64.05ms
+[2017.03.21-20.21.46:826][849]LogSavePackage: Moving '../../../../../PTSD/PTSD-Project/PTSD/Saved/FAKEVR8BFB0B0A43E0305CBDB567B7DAA90427.tmp' to '../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset'
+[2017.03.21-20.21.46:827][849]LogSavePackage:Display: Finished SavePackage ../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset
+[2017.03.21-20.23.03:683][155]BlueprintLog: New page: Compile FAKEVR
+[2017.03.21-20.23.04:625][176]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FAKEVR" FILE="../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset" SILENT=true
+[2017.03.21-20.23.04:687][176]LogSavePackage: Save=59.56ms
+[2017.03.21-20.23.04:687][176]LogSavePackage: Moving '../../../../../PTSD/PTSD-Project/PTSD/Saved/FAKEVRA3743C2A47E746B0789E438E4CD990FB.tmp' to '../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset'
+[2017.03.21-20.23.04:689][176]LogSavePackage:Display: Finished SavePackage ../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset
+[2017.03.21-20.23.52:332][955]BlueprintLog: New page: Compile FAKEVR
+[2017.03.21-20.23.53:052][961]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FAKEVR" FILE="../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset" SILENT=true
+[2017.03.21-20.23.53:120][961]LogSavePackage: Save=61.03ms
+[2017.03.21-20.23.53:120][961]LogSavePackage: Moving '../../../../../PTSD/PTSD-Project/PTSD/Saved/FAKEVR50F3F85F4730D1DC369F03A83421661E.tmp' to '../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset'
+[2017.03.21-20.23.53:123][961]LogSavePackage:Display: Finished SavePackage ../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset
+[2017.03.21-20.23.53:714][995]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.21-20.23.53:730][995]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.21-20.23.53:730][995]PIE: New page: PIE session: Prototype (Mar 21, 2017, 12:23:53 PM)
+[2017.03.21-20.23.53:730][995]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Prototype
+[2017.03.21-20.23.53:733][995]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002720s)
+[2017.03.21-20.23.53:734][995]LogAIModule: Creating AISystem for world Prototype
+[2017.03.21-20.23.53:734][995]LogPlayLevel: PIE: World Init took: (0.000848s)
+[2017.03.21-20.23.53:734][995]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Prototype.Prototype to /Game/UEDPIE_0_Prototype.Prototype (0.003816s)
+[2017.03.21-20.23.53:753][995]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.21-20.23.53:765][995]LogInit: FAudioDevice initialized.
+[2017.03.21-20.23.53:810][995]LogLoad: Game class is 'VRGameMode_C'
+[2017.03.21-20.23.53:813][995]LogWorld: Bringing World /Game/UEDPIE_0_Prototype.Prototype up for play (max tick rate 60) at 2017.03.21-16.23.53
+[2017.03.21-20.23.53:813][995]LogWorld: Bringing up level for play took: 0.002082
+[2017.03.21-20.23.53:823][995]PIE: Info Play in editor start time for /Game/UEDPIE_0_Prototype -0.289
+[2017.03.21-20.24.17:007][377]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.21-20.24.17:022][377]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.21-20.24.17:022][377]PIE: New page: PIE session: Prototype (Mar 21, 2017, 12:24:17 PM)
+[2017.03.21-20.24.17:022][377]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Prototype
+[2017.03.21-20.24.17:024][377]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002320s)
+[2017.03.21-20.24.17:025][377]LogAIModule: Creating AISystem for world Prototype
+[2017.03.21-20.24.17:025][377]LogPlayLevel: PIE: World Init took: (0.000853s)
+[2017.03.21-20.24.17:025][377]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Prototype.Prototype to /Game/UEDPIE_0_Prototype.Prototype (0.003373s)
+[2017.03.21-20.24.17:041][377]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.21-20.24.17:051][377]LogInit: FAudioDevice initialized.
+[2017.03.21-20.24.17:092][377]LogLoad: Game class is 'VRGameMode_C'
+[2017.03.21-20.24.17:097][377]LogWorld: Bringing World /Game/UEDPIE_0_Prototype.Prototype up for play (max tick rate 60) at 2017.03.21-16.24.17
+[2017.03.21-20.24.17:098][377]LogWorld: Bringing up level for play took: 0.004752
+[2017.03.21-20.24.17:106][377]PIE: Info Play in editor start time for /Game/UEDPIE_0_Prototype 0.993
+[2017.03.21-20.26.07:892][879]BlueprintLog: New page: Compile FAKEVR
+[2017.03.21-20.26.09:224][920]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FAKEVR" FILE="../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset" SILENT=true
+[2017.03.21-20.26.09:299][920]LogSavePackage: Save=63.74ms
+[2017.03.21-20.26.09:299][920]LogSavePackage: Moving '../../../../../PTSD/PTSD-Project/PTSD/Saved/FAKEVR9260AB6E4B910A07ECE7019CC35A7183.tmp' to '../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset'
+[2017.03.21-20.26.09:301][920]LogSavePackage:Display: Finished SavePackage ../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset
+[2017.03.21-20.26.11:315][ 40]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.21-20.26.11:332][ 40]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.21-20.26.11:332][ 40]PIE: New page: PIE session: Prototype (Mar 21, 2017, 12:26:11 PM)
+[2017.03.21-20.26.11:332][ 40]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Prototype
+[2017.03.21-20.26.11:335][ 40]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002329s)
+[2017.03.21-20.26.11:335][ 40]LogAIModule: Creating AISystem for world Prototype
+[2017.03.21-20.26.11:336][ 40]LogPlayLevel: PIE: World Init took: (0.000965s)
+[2017.03.21-20.26.11:336][ 40]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Prototype.Prototype to /Game/UEDPIE_0_Prototype.Prototype (0.003493s)
+[2017.03.21-20.26.11:353][ 40]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.21-20.26.11:363][ 40]LogInit: FAudioDevice initialized.
+[2017.03.21-20.26.11:408][ 40]LogLoad: Game class is 'VRGameMode_C'
+[2017.03.21-20.26.11:411][ 40]LogWorld: Bringing World /Game/UEDPIE_0_Prototype.Prototype up for play (max tick rate 60) at 2017.03.21-16.26.11
+[2017.03.21-20.26.11:411][ 40]LogWorld: Bringing up level for play took: 0.001767
+[2017.03.21-20.26.11:419][ 40]PIE: Info Play in editor start time for /Game/UEDPIE_0_Prototype -0.694
+[2017.03.21-20.26.12:402][ 93]PIE:Warning: Warning AttachTo: '/Game/UEDPIE_0_Prototype.Prototype:PersistentLevel.FAKEVR_C_0.Capsule' root component cannot be attached to other components in the same actor. Aborting.
+[2017.03.21-20.26.12:778][116]PIE:Warning: Warning AttachTo: '/Game/UEDPIE_0_Prototype.Prototype:PersistentLevel.FAKEVR_C_0.Capsule' root component cannot be attached to other components in the same actor. Aborting.
+[2017.03.21-20.26.29:378][112]PIE:Warning: Warning AttachTo: '/Game/UEDPIE_0_Prototype.Prototype:PersistentLevel.FAKEVR_C_0.Capsule' root component cannot be attached to other components in the same actor. Aborting.
+[2017.03.21-20.26.31:478][238]PIE:Warning: Warning AttachTo: '/Game/UEDPIE_0_Prototype.Prototype:PersistentLevel.FAKEVR_C_0.Capsule' root component cannot be attached to other components in the same actor. Aborting.
+[2017.03.21-20.26.32:312][288]PIE:Warning: Warning AttachTo: '/Game/UEDPIE_0_Prototype.Prototype:PersistentLevel.FAKEVR_C_0.Capsule' root component cannot be attached to other components in the same actor. Aborting.
+[2017.03.21-20.26.33:328][349]PIE:Warning: Warning AttachTo: '/Game/UEDPIE_0_Prototype.Prototype:PersistentLevel.FAKEVR_C_0.Capsule' root component cannot be attached to other components in the same actor. Aborting.
+[2017.03.21-20.26.34:345][410]PIE:Warning: Warning AttachTo: '/Game/UEDPIE_0_Prototype.Prototype:PersistentLevel.FAKEVR_C_0.Capsule' root component cannot be attached to other components in the same actor. Aborting.
+[2017.03.21-20.26.34:845][440]PIE:Warning: Warning AttachTo: '/Game/UEDPIE_0_Prototype.Prototype:PersistentLevel.FAKEVR_C_0.Capsule' root component cannot be attached to other components in the same actor. Aborting.
+[2017.03.21-20.26.39:980][748]PIE:Warning: Warning AttachTo: '/Game/UEDPIE_0_Prototype.Prototype:PersistentLevel.FAKEVR_C_0.Capsule' root component cannot be attached to other components in the same actor. Aborting.
+[2017.03.21-20.28.12:558][235]LogSlate: Took 0.025429 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensedItalic.ttf' (160K)
+[2017.03.21-20.28.33:323][467]BlueprintLog: New page: Compile Ball
+[2017.03.21-20.28.34:077][489]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Ball" FILE="../../../../../PTSD/PTSD-Project/PTSD/Content/Ball.uasset" SILENT=true
+[2017.03.21-20.28.34:123][489]LogSavePackage: Save=38.41ms
+[2017.03.21-20.28.34:123][489]LogSavePackage: Moving '../../../../../PTSD/PTSD-Project/PTSD/Saved/Ball5676B95041B13D2E4A7FFDB555F52F1D.tmp' to '../../../../../PTSD/PTSD-Project/PTSD/Content/Ball.uasset'
+[2017.03.21-20.28.34:125][489]LogSavePackage:Display: Finished SavePackage ../../../../../PTSD/PTSD-Project/PTSD/Content/Ball.uasset
+[2017.03.21-20.29.48:722][915]BlueprintLog: New page: Compile Ball
+[2017.03.21-20.29.49:596][945]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Ball" FILE="../../../../../PTSD/PTSD-Project/PTSD/Content/Ball.uasset" SILENT=true
+[2017.03.21-20.29.49:625][945]LogSavePackage: Save=23.02ms
+[2017.03.21-20.29.49:626][945]LogSavePackage: Moving '../../../../../PTSD/PTSD-Project/PTSD/Saved/BallAC88944947AC72DBCE53809F1F3D7CA0.tmp' to '../../../../../PTSD/PTSD-Project/PTSD/Content/Ball.uasset'
+[2017.03.21-20.29.49:627][945]LogSavePackage:Display: Finished SavePackage ../../../../../PTSD/PTSD-Project/PTSD/Content/Ball.uasset
+[2017.03.21-20.29.50:853][ 18]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.21-20.29.50:867][ 18]BlueprintLog: New page: Pre-Play auto-recompile
+[2017.03.21-20.29.50:868][ 18]LogPlayLevel: [PlayLevel] Compiling FAKEVR before play...
+[2017.03.21-20.29.51:011][ 18]LogPlayLevel: PlayLevel: Blueprint regeneration took 144 ms (1 blueprints)
+[2017.03.21-20.29.51:012][ 18]PIE: New page: PIE session: Prototype (Mar 21, 2017, 12:29:51 PM)
+[2017.03.21-20.29.51:012][ 18]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Prototype
+[2017.03.21-20.29.51:014][ 18]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002424s)
+[2017.03.21-20.29.51:015][ 18]LogAIModule: Creating AISystem for world Prototype
+[2017.03.21-20.29.51:015][ 18]LogPlayLevel: PIE: World Init took: (0.000758s)
+[2017.03.21-20.29.51:015][ 18]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Prototype.Prototype to /Game/UEDPIE_0_Prototype.Prototype (0.003389s)
+[2017.03.21-20.29.51:033][ 18]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.21-20.29.51:042][ 18]LogInit: FAudioDevice initialized.
+[2017.03.21-20.29.51:075][ 18]LogLoad: Game class is 'VRGameMode_C'
+[2017.03.21-20.29.51:078][ 18]LogWorld: Bringing World /Game/UEDPIE_0_Prototype.Prototype up for play (max tick rate 60) at 2017.03.21-16.29.51
+[2017.03.21-20.29.51:078][ 18]LogWorld: Bringing up level for play took: 0.002044
+[2017.03.21-20.29.51:082][ 18]PIE: Info Play in editor start time for /Game/UEDPIE_0_Prototype 0.969
+[2017.03.21-20.31.18:112][147]BlueprintLog: New page: Compile FAKEVR
+[2017.03.21-20.31.19:169][174]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FAKEVR" FILE="../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset" SILENT=true
+[2017.03.21-20.31.19:243][174]LogSavePackage: Save=65.10ms
+[2017.03.21-20.31.19:243][174]LogSavePackage: Moving '../../../../../PTSD/PTSD-Project/PTSD/Saved/FAKEVRFB0AFE064DD0464B979F98937B471A5F.tmp' to '../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset'
+[2017.03.21-20.31.19:246][174]LogSavePackage:Display: Finished SavePackage ../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset
+[2017.03.21-20.31.19:742][203]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.21-20.31.19:759][203]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.21-20.31.19:760][203]PIE: New page: PIE session: Prototype (Mar 21, 2017, 12:31:19 PM)
+[2017.03.21-20.31.19:760][203]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Prototype
+[2017.03.21-20.31.19:762][203]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002478s)
+[2017.03.21-20.31.19:763][203]LogAIModule: Creating AISystem for world Prototype
+[2017.03.21-20.31.19:763][203]LogPlayLevel: PIE: World Init took: (0.000887s)
+[2017.03.21-20.31.19:763][203]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Prototype.Prototype to /Game/UEDPIE_0_Prototype.Prototype (0.003597s)
+[2017.03.21-20.31.19:781][203]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.21-20.31.19:792][203]LogInit: FAudioDevice initialized.
+[2017.03.21-20.31.19:834][203]LogLoad: Game class is 'VRGameMode_C'
+[2017.03.21-20.31.19:838][203]LogWorld: Bringing World /Game/UEDPIE_0_Prototype.Prototype up for play (max tick rate 60) at 2017.03.21-16.31.19
+[2017.03.21-20.31.19:838][203]LogWorld: Bringing up level for play took: 0.001537
+[2017.03.21-20.31.19:847][203]PIE: Info Play in editor start time for /Game/UEDPIE_0_Prototype -0.266
+[2017.03.21-20.32.59:280][ 97]BlueprintLog: New page: Compile Ball
+[2017.03.21-20.32.59:968][127]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Ball" FILE="../../../../../PTSD/PTSD-Project/PTSD/Content/Ball.uasset" SILENT=true
+[2017.03.21-20.32.59:996][127]LogSavePackage: Save=24.90ms
+[2017.03.21-20.32.59:996][127]LogSavePackage: Moving '../../../../../PTSD/PTSD-Project/PTSD/Saved/Ball5BAB18BB49A8E748207B93A2289E1CF6.tmp' to '../../../../../PTSD/PTSD-Project/PTSD/Content/Ball.uasset'
+[2017.03.21-20.32.59:998][127]LogSavePackage:Display: Finished SavePackage ../../../../../PTSD/PTSD-Project/PTSD/Content/Ball.uasset
+[2017.03.21-20.33.00:423][152]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.21-20.33.00:438][152]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.21-20.33.00:438][152]PIE: New page: PIE session: Prototype (Mar 21, 2017, 12:33:00 PM)
+[2017.03.21-20.33.00:438][152]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Prototype
+[2017.03.21-20.33.00:441][152]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002417s)
+[2017.03.21-20.33.00:441][152]LogAIModule: Creating AISystem for world Prototype
+[2017.03.21-20.33.00:442][152]LogPlayLevel: PIE: World Init took: (0.000747s)
+[2017.03.21-20.33.00:442][152]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Prototype.Prototype to /Game/UEDPIE_0_Prototype.Prototype (0.003371s)
+[2017.03.21-20.33.00:460][152]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.21-20.33.00:469][152]LogInit: FAudioDevice initialized.
+[2017.03.21-20.33.00:504][152]LogLoad: Game class is 'VRGameMode_C'
+[2017.03.21-20.33.00:507][152]LogWorld: Bringing World /Game/UEDPIE_0_Prototype.Prototype up for play (max tick rate 60) at 2017.03.21-16.33.00
+[2017.03.21-20.33.00:507][152]LogWorld: Bringing up level for play took: 0.001498
+[2017.03.21-20.33.00:510][152]PIE: Info Play in editor start time for /Game/UEDPIE_0_Prototype 0.397
+[2017.03.21-20.33.50:013][ 90]BlueprintLog: New page: Compile Ball
+[2017.03.21-20.33.51:665][152]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Ball" FILE="../../../../../PTSD/PTSD-Project/PTSD/Content/Ball.uasset" SILENT=true
+[2017.03.21-20.33.51:698][152]LogSavePackage: Save=24.48ms
+[2017.03.21-20.33.51:698][152]LogSavePackage: Moving '../../../../../PTSD/PTSD-Project/PTSD/Saved/Ball75E1ADA74124536FFDE80A8387E172C5.tmp' to '../../../../../PTSD/PTSD-Project/PTSD/Content/Ball.uasset'
+[2017.03.21-20.33.51:700][152]LogSavePackage:Display: Finished SavePackage ../../../../../PTSD/PTSD-Project/PTSD/Content/Ball.uasset
+[2017.03.21-20.34.11:613][337]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2017.03.21-20.34.22:224][968]BlueprintLog: New page: Compile Ball
+[2017.03.21-20.34.22:821][994]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Ball" FILE="../../../../../PTSD/PTSD-Project/PTSD/Content/Ball.uasset" SILENT=true
+[2017.03.21-20.34.22:850][994]LogSavePackage: Save=24.63ms
+[2017.03.21-20.34.22:850][994]LogSavePackage: Moving '../../../../../PTSD/PTSD-Project/PTSD/Saved/BallC59EE1964E703A5858D3519768238098.tmp' to '../../../../../PTSD/PTSD-Project/PTSD/Content/Ball.uasset'
+[2017.03.21-20.34.22:852][994]LogSavePackage:Display: Finished SavePackage ../../../../../PTSD/PTSD-Project/PTSD/Content/Ball.uasset
+[2017.03.21-20.34.25:247][129]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Prototype" FILE="../../../../../PTSD/PTSD-Project/PTSD/Content/Prototype.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2017.03.21-20.34.25:360][129]LogSavePackage: Save=73.18ms
+[2017.03.21-20.34.25:360][129]LogSavePackage: Moving '../../../../../PTSD/PTSD-Project/PTSD/Saved/PrototypeB4BAAF6F456E36234C14D9946097FBD3.tmp' to '../../../../../PTSD/PTSD-Project/PTSD/Content/Prototype.umap'
+[2017.03.21-20.34.25:362][129]LogSavePackage:Display: Finished SavePackage ../../../../../PTSD/PTSD-Project/PTSD/Content/Prototype.umap
+[2017.03.21-20.34.27:184][221]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2017.03.21-20.34.27:496][222]Cmd: QUIT_EDITOR
+[2017.03.21-20.34.27:673][222]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.03.21-20.34.27:719][222]LogExit: Preparing to exit.
+[2017.03.21-20.34.28:240][222]LogDirectoryWatcher: A directory notification for 'C:/PTSD/PTSD-Project/PTSD/Content/' was aborted.
+[2017.03.21-20.34.28:332][222]LogExit: Editor shut down
+[2017.03.21-20.34.28:333][222]LogExit: Transaction tracking system shut down
+[2017.03.21-20.34.28:510][222]LogObj: Freed 0b from 0 cluster array pools.
+[2017.03.21-20.34.28:511][222]LogExit: Object subsystem successfully closed.
+[2017.03.21-20.34.28:544][222]LogD3D11RHI: Shutdown
+[2017.03.21-20.34.28:544][222]LogD3D11RHI: CleanupD3DDevice
+[2017.03.21-20.34.28:622][222]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.03.21-20.34.28:640][222]LogModuleManager: Shutting down and abandoning module BlueprintGraph (504)
+[2017.03.21-20.34.28:640][222]LogModuleManager: Shutting down and abandoning module BlueprintProfiler (502)
+[2017.03.21-20.34.28:647][222]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (500)
+[2017.03.21-20.34.28:648][222]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (498)
+[2017.03.21-20.34.28:648][222]LogModuleManager: Shutting down and abandoning module CrashTracker (496)
+[2017.03.21-20.34.28:648][222]LogModuleManager: Shutting down and abandoning module AddContentDialog (494)
+[2017.03.21-20.34.28:648][222]LogDirectoryWatcher: A directory notification for 'C:/Games/UE_4.15/FeaturePacks/' was aborted.
+[2017.03.21-20.34.28:654][222]LogModuleManager: Shutting down and abandoning module WidgetCarousel (493)
+[2017.03.21-20.34.28:654][222]LogModuleManager: Shutting down and abandoning module EditorWidgets (490)
+[2017.03.21-20.34.28:654][222]LogModuleManager: Shutting down and abandoning module CollectionManager (488)
+[2017.03.21-20.34.28:654][222]LogDirectoryWatcher: A directory notification for 'C:/PTSD/PTSD-Project/PTSD/Content/Collections/' was aborted.
+[2017.03.21-20.34.28:654][222]LogDirectoryWatcher: A directory notification for 'C:/PTSD/PTSD-Project/PTSD/Content/Developers/inner000/Collections/' was aborted.
+[2017.03.21-20.34.28:654][222]LogDirectoryWatcher: A directory notification for 'C:/PTSD/PTSD-Project/PTSD/Saved/Collections/' was aborted.
+[2017.03.21-20.34.28:654][222]LogModuleManager: Shutting down and abandoning module SceneOutliner (486)
+[2017.03.21-20.34.28:654][222]LogModuleManager: Shutting down and abandoning module StatsViewer (484)
+[2017.03.21-20.34.28:654][222]LogModuleManager: Shutting down and abandoning module FoliageEdit (482)
+[2017.03.21-20.34.28:654][222]LogModuleManager: Shutting down and abandoning module LandscapeEditor (480)
+[2017.03.21-20.34.28:654][222]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (478)
+[2017.03.21-20.34.28:654][222]LogModuleManager: Shutting down and abandoning module ActorPickerMode (476)
+[2017.03.21-20.34.28:654][222]LogModuleManager: Shutting down and abandoning module GeometryMode (474)
+[2017.03.21-20.34.28:654][222]LogModuleManager: Shutting down and abandoning module TextureAlignMode (472)
+[2017.03.21-20.34.28:654][222]LogModuleManager: Shutting down and abandoning module BspMode (470)
+[2017.03.21-20.34.28:654][222]LogModuleManager: Shutting down and abandoning module HardwareSurvey (468)
+[2017.03.21-20.34.28:654][222]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (466)
+[2017.03.21-20.34.28:654][222]LogModuleManager: Shutting down and abandoning module AutomationWorker (464)
+[2017.03.21-20.34.28:654][222]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (462)
+[2017.03.21-20.34.28:654][222]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (460)
+[2017.03.21-20.34.28:654][222]LogModuleManager: Shutting down and abandoning module PlacementMode (459)
+[2017.03.21-20.34.28:655][222]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (456)
+[2017.03.21-20.34.28:655][222]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (454)
+[2017.03.21-20.34.28:655][222]LogModuleManager: Shutting down and abandoning module MfMediaFactory (452)
+[2017.03.21-20.34.28:655][222]LogModuleManager: Shutting down and abandoning module MfMediaEditor (450)
+[2017.03.21-20.34.28:655][222]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (448)
+[2017.03.21-20.34.28:655][222]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (446)
+[2017.03.21-20.34.28:655][222]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (444)
+[2017.03.21-20.34.28:655][222]LogModuleManager: Shutting down and abandoning module Media (443)
+[2017.03.21-20.34.28:655][222]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (440)
+[2017.03.21-20.34.28:655][222]LogModuleManager: Shutting down and abandoning module CharacterAI (438)
+[2017.03.21-20.34.28:655][222]LogModuleManager: Shutting down and abandoning module AudioCapture (436)
+[2017.03.21-20.34.28:655][222]LogModuleManager: Shutting down and abandoning module SequenceRecorder (435)
+[2017.03.21-20.34.28:655][222]LogModuleManager: Shutting down and abandoning module SmartSnapping (432)
+[2017.03.21-20.34.28:655][222]LogModuleManager: Shutting down and abandoning module SessionServices (430)
+[2017.03.21-20.34.28:655][222]LogModuleManager: Shutting down and abandoning module ViewportSnapping (428)
+[2017.03.21-20.34.28:655][222]LogModuleManager: Shutting down and abandoning module ViewportInteraction (426)
+[2017.03.21-20.34.28:655][222]LogModuleManager: Shutting down and abandoning module LogVisualizer (424)
+[2017.03.21-20.34.28:655][222]LogModuleManager: Shutting down and abandoning module IntroTutorials (422)
+[2017.03.21-20.34.28:655][222]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (421)
+[2017.03.21-20.34.28:655][222]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (418)
+[2017.03.21-20.34.28:655][222]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (416)
+[2017.03.21-20.34.28:655][222]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (414)
+[2017.03.21-20.34.28:655][222]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (412)
+[2017.03.21-20.34.28:655][222]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (411)
+[2017.03.21-20.34.28:889][222]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (408)
+[2017.03.21-20.34.28:889][222]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (406)
+[2017.03.21-20.34.28:889][222]LogModuleManager: Shutting down and abandoning module InputBindingEditor (404)
+[2017.03.21-20.34.28:889][222]LogModuleManager: Shutting down and abandoning module NiagaraEditor (402)
+[2017.03.21-20.34.28:889][222]LogModuleManager: Shutting down and abandoning module MergeActors (400)
+[2017.03.21-20.34.28:889][222]LogModuleManager: Shutting down and abandoning module SizeMap (398)
+[2017.03.21-20.34.28:889][222]LogModuleManager: Shutting down and abandoning module TreeMap (396)
+[2017.03.21-20.34.28:889][222]LogModuleManager: Shutting down and abandoning module ReferenceViewer (394)
+[2017.03.21-20.34.28:889][222]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (392)
+[2017.03.21-20.34.28:889][222]LogModuleManager: Shutting down and abandoning module LocalizationService (391)
+[2017.03.21-20.34.28:889][222]LogModuleManager: Shutting down and abandoning module HardwareTargeting (388)
+[2017.03.21-20.34.28:889][222]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (386)
+[2017.03.21-20.34.28:889][222]LogModuleManager: Shutting down and abandoning module UndoHistory (384)
+[2017.03.21-20.34.28:889][222]LogModuleManager: Shutting down and abandoning module UserFeedback (382)
+[2017.03.21-20.34.28:889][222]LogModuleManager: Shutting down and abandoning module XmlParser (380)
+[2017.03.21-20.34.28:889][222]LogModuleManager: Shutting down and abandoning module Blutility (378)
+[2017.03.21-20.34.28:889][222]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (376)
+[2017.03.21-20.34.28:889][222]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (375)
+[2017.03.21-20.34.28:890][222]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (372)
+[2017.03.21-20.34.28:890][222]LogModuleManager: Shutting down and abandoning module SettingsEditor (370)
+[2017.03.21-20.34.28:890][222]LogModuleManager: Shutting down and abandoning module ProjectLauncher (368)
+[2017.03.21-20.34.28:890][222]LogModuleManager: Shutting down and abandoning module SessionFrontend (366)
+[2017.03.21-20.34.28:890][222]LogModuleManager: Shutting down and abandoning module ProfilerClient (364)
+[2017.03.21-20.34.28:890][222]LogModuleManager: Shutting down and abandoning module DeviceManager (362)
+[2017.03.21-20.34.28:890][222]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (361)
+[2017.03.21-20.34.28:944][222]LogModuleManager: Shutting down and abandoning module AutomationController (358)
+[2017.03.21-20.34.28:944][222]LogModuleManager: Shutting down and abandoning module AutomationWindow (356)
+[2017.03.21-20.34.28:944][222]LogModuleManager: Shutting down and abandoning module Layers (354)
+[2017.03.21-20.34.28:944][222]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (352)
+[2017.03.21-20.34.28:944][222]LogModuleManager: Shutting down and abandoning module DetailCustomizations (350)
+[2017.03.21-20.34.28:944][222]LogModuleManager: Shutting down and abandoning module PackagesDialog (348)
+[2017.03.21-20.34.28:944][222]LogModuleManager: Shutting down and abandoning module Persona (346)
+[2017.03.21-20.34.28:944][222]LogModuleManager: Shutting down and abandoning module AnimGraph (345)
+[2017.03.21-20.34.28:944][222]LogModuleManager: Shutting down and abandoning module Kismet (342)
+[2017.03.21-20.34.28:955][222]LogModuleManager: Shutting down and abandoning module GraphEditor (340)
+[2017.03.21-20.34.28:955][222]LogModuleManager: Shutting down and abandoning module ClassViewer (338)
+[2017.03.21-20.34.28:957][222]LogModuleManager: Shutting down and abandoning module Toolbox (336)
+[2017.03.21-20.34.28:957][222]LogModuleManager: Shutting down and abandoning module ModuleUI (334)
+[2017.03.21-20.34.28:957][222]LogModuleManager: Shutting down and abandoning module MovieSceneTools (332)
+[2017.03.21-20.34.28:957][222]LogModuleManager: Shutting down and abandoning module OutputLog (330)
+[2017.03.21-20.34.28:957][222]LogModuleManager: Shutting down and abandoning module GammaUI (328)
+[2017.03.21-20.34.28:957][222]LogModuleManager: Shutting down and abandoning module Documentation (326)
+[2017.03.21-20.34.28:959][222]LogModuleManager: Shutting down and abandoning module Niagara (324)
+[2017.03.21-20.34.28:959][222]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (322)
+[2017.03.21-20.34.28:959][222]LogModuleManager: Shutting down and abandoning module AnalyticsET (320)
+[2017.03.21-20.34.28:959][222]LogModuleManager: Shutting down and abandoning module PortalServices (318)
+[2017.03.21-20.34.28:959][222]LogModuleManager: Shutting down and abandoning module PortalRpc (316)
+[2017.03.21-20.34.28:959][222]LogModuleManager: Shutting down and abandoning module MessagingRpc (314)
+[2017.03.21-20.34.28:959][222]LogModuleManager: Shutting down and abandoning module AIModule (312)
+[2017.03.21-20.34.28:959][222]LogModuleManager: Shutting down and abandoning module GameplayDebugger (311)
+[2017.03.21-20.34.28:959][222]LogModuleManager: Shutting down and abandoning module AITestSuite (309)
+[2017.03.21-20.34.28:959][222]LogModuleManager: Shutting down and abandoning module ProfilerService (306)
+[2017.03.21-20.34.29:185][222]LogModuleManager: Shutting down and abandoning module TaskGraph (304)
+[2017.03.21-20.34.29:185][222]LogModuleManager: Shutting down and abandoning module SteamVRController (302)
+[2017.03.21-20.34.29:185][222]LogModuleManager: Shutting down and abandoning module SteamVR (300)
+[2017.03.21-20.34.29:185][222]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (298)
+[2017.03.21-20.34.29:185][222]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (296)
+[2017.03.21-20.34.29:185][222]LogModuleManager: Shutting down and abandoning module OculusLibrary (294)
+[2017.03.21-20.34.29:185][222]LogModuleManager: Shutting down and abandoning module OculusInput (292)
+[2017.03.21-20.34.29:185][222]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (290)
+[2017.03.21-20.34.29:185][222]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (288)
+[2017.03.21-20.34.29:185][222]LogModuleManager: Shutting down and abandoning module CableComponent (286)
+[2017.03.21-20.34.29:185][222]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (284)
+[2017.03.21-20.34.29:185][222]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (280)
+[2017.03.21-20.34.29:185][222]LogModuleManager: Shutting down and abandoning module HTML5Networking (278)
+[2017.03.21-20.34.29:185][222]LogModuleManager: Shutting down and abandoning module AlembicImporter (276)
+[2017.03.21-20.34.29:185][222]LogModuleManager: Shutting down and abandoning module AlembicLibrary (275)
+[2017.03.21-20.34.29:185][222]LogModuleManager: Shutting down and abandoning module GeometryCache (274)
+[2017.03.21-20.34.29:185][222]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (273)
+[2017.03.21-20.34.29:185][222]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (268)
+[2017.03.21-20.34.29:185][222]LogModuleManager: Shutting down and abandoning module SuperSearch (267)
+[2017.03.21-20.34.29:185][222]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (264)
+[2017.03.21-20.34.29:185][222]LogModuleManager: Shutting down and abandoning module PluginBrowser (262)
+[2017.03.21-20.34.29:185][222]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (260)
+[2017.03.21-20.34.29:185][222]LogModuleManager: Shutting down and abandoning module EpicSurvey (258)
+[2017.03.21-20.34.29:185][222]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (256)
+[2017.03.21-20.34.29:185][222]LogModuleManager: Shutting down and abandoning module DesktopPlatform (255)
+[2017.03.21-20.34.29:185][222]LogModuleManager: Shutting down and abandoning module UObjectPlugin (252)
+[2017.03.21-20.34.29:185][222]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (250)
+[2017.03.21-20.34.29:185][222]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (248)
+[2017.03.21-20.34.29:185][222]LogModuleManager: Shutting down and abandoning module GitSourceControl (246)
+[2017.03.21-20.34.29:185][222]LogModuleManager: Shutting down and abandoning module SourceControl (245)
+[2017.03.21-20.34.29:185][222]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (242)
+[2017.03.21-20.34.29:185][222]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (240)
+[2017.03.21-20.34.29:185][222]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (238)
+[2017.03.21-20.34.29:185][222]LogModuleManager: Shutting down and abandoning module Paper2DEditor (236)
+[2017.03.21-20.34.29:185][222]LogModuleManager: Shutting down and abandoning module MeshPaint (235)
+[2017.03.21-20.34.29:185][222]LogModuleManager: Shutting down and abandoning module LevelEditor (233)
+[2017.03.21-20.34.29:187][222]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (232)
+[2017.03.21-20.34.29:187][222]LogModuleManager: Shutting down and abandoning module MainFrame (230)
+[2017.03.21-20.34.29:187][222]LogModuleManager: Shutting down and abandoning module HotReload (229)
+[2017.03.21-20.34.29:187][222]LogModuleManager: Shutting down and abandoning module ContentBrowser (225)
+[2017.03.21-20.34.29:189][222]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (222)
+[2017.03.21-20.34.29:189][222]LogModuleManager: Shutting down and abandoning module PhysXVehicles (220)
+[2017.03.21-20.34.29:189][222]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (218)
+[2017.03.21-20.34.29:189][222]LogModuleManager: Shutting down and abandoning module UdpMessaging (216)
+[2017.03.21-20.34.29:290][222]LogModuleManager: Shutting down and abandoning module TcpMessaging (214)
+[2017.03.21-20.34.29:391][222]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (212)
+[2017.03.21-20.34.29:391][222]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (210)
+[2017.03.21-20.34.29:391][222]LogModuleManager: Shutting down and abandoning module FacialAnimation (208)
+[2017.03.21-20.34.29:391][222]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (206)
+[2017.03.21-20.34.29:391][222]LogModuleManager: Shutting down and abandoning module Paper2D (204)
+[2017.03.21-20.34.29:391][222]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (202)
+[2017.03.21-20.34.29:391][222]LogModuleManager: Shutting down and abandoning module WmfMedia (200)
+[2017.03.21-20.34.29:391][222]LogModuleManager: Shutting down and abandoning module MfMedia (198)
+[2017.03.21-20.34.29:391][222]LogModuleManager: Shutting down and abandoning module MediaAssets (196)
+[2017.03.21-20.34.29:391][222]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (194)
+[2017.03.21-20.34.29:391][222]LogModuleManager: Shutting down and abandoning module VREditor (192)
+[2017.03.21-20.34.29:391][222]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (190)
+[2017.03.21-20.34.29:391][222]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (188)
+[2017.03.21-20.34.29:391][222]LogModuleManager: Shutting down and abandoning module FunctionalTesting (186)
+[2017.03.21-20.34.29:391][222]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (184)
+[2017.03.21-20.34.29:391][222]LogModuleManager: Shutting down and abandoning module UMG (182)
+[2017.03.21-20.34.29:391][222]LogModuleManager: Shutting down and abandoning module UMGEditor (181)
+[2017.03.21-20.34.29:391][222]LogModuleManager: Shutting down and abandoning module Sequencer (180)
+[2017.03.21-20.34.29:391][222]LogModuleManager: Shutting down and abandoning module AssetTools (178)
+[2017.03.21-20.34.29:391][222]LogModuleManager: Shutting down and abandoning module MessageLog (177)
+[2017.03.21-20.34.29:391][222]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (176)
+[2017.03.21-20.34.29:392][222]LogModuleManager: Shutting down and abandoning module SlateReflector (170)
+[2017.03.21-20.34.29:392][222]LogModuleManager: Shutting down and abandoning module Slate (168)
+[2017.03.21-20.34.29:392][222]LogModuleManager: Shutting down and abandoning module EditorStyle (166)
+[2017.03.21-20.34.29:394][222]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (164)
+[2017.03.21-20.34.29:394][222]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (162)
+[2017.03.21-20.34.29:394][222]LogModuleManager: Shutting down and abandoning module XAudio2 (160)
+[2017.03.21-20.34.29:394][222]LogModuleManager: Shutting down and abandoning module Networking (158)
+[2017.03.21-20.34.29:394][222]LogModuleManager: Shutting down and abandoning module Core (154)
+[2017.03.21-20.34.29:394][222]LogModuleManager: Shutting down and abandoning module AssetRegistry (152)
+[2017.03.21-20.34.29:542][222]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2017.03.21-20.34.29:542][222]LogDirectoryWatcher: A directory notification for '../../../../../PTSD/PTSD-Project/PTSD/Content/' was aborted.
+[2017.03.21-20.34.29:542][222]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2017.03.21-20.34.29:542][222]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (151)
+[2017.03.21-20.34.29:547][222]LogModuleManager: Shutting down and abandoning module KismetCompiler (148)
+[2017.03.21-20.34.29:547][222]LogModuleManager: Shutting down and abandoning module PhysXFormats (146)
+[2017.03.21-20.34.29:547][222]LogModuleManager: Shutting down and abandoning module MeshUtilities (144)
+[2017.03.21-20.34.29:547][222]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (143)
+[2017.03.21-20.34.29:547][222]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (141)
+[2017.03.21-20.34.29:547][222]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (139)
+[2017.03.21-20.34.29:547][222]LogModuleManager: Shutting down and abandoning module PropertyEditor (137)
+[2017.03.21-20.34.29:547][222]LogModuleManager: Shutting down and abandoning module DerivedDataCache (134)
+[2017.03.21-20.34.29:605][222]LogDerivedDataCache: Shutdown
+[2017.03.21-20.34.29:605][222]LogModuleManager: Shutting down and abandoning module TargetPlatform (132)
+[2017.03.21-20.34.29:605][222]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (131)
+[2017.03.21-20.34.29:605][222]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (129)
+[2017.03.21-20.34.29:605][222]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (127)
+[2017.03.21-20.34.29:606][222]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (125)
+[2017.03.21-20.34.29:606][222]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (123)
+[2017.03.21-20.34.29:606][222]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (121)
+[2017.03.21-20.34.29:606][222]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (119)
+[2017.03.21-20.34.29:606][222]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (117)
+[2017.03.21-20.34.29:606][222]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (115)
+[2017.03.21-20.34.29:606][222]LogModuleManager: Shutting down and abandoning module ImageWrapper (114)
+[2017.03.21-20.34.29:606][222]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (111)
+[2017.03.21-20.34.29:606][222]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (109)
+[2017.03.21-20.34.29:606][222]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (107)
+[2017.03.21-20.34.29:606][222]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (105)
+[2017.03.21-20.34.29:606][222]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (103)
+[2017.03.21-20.34.29:606][222]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (101)
+[2017.03.21-20.34.29:606][222]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (99)
+[2017.03.21-20.34.29:606][222]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (97)
+[2017.03.21-20.34.29:606][222]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (95)
+[2017.03.21-20.34.29:606][222]LogModuleManager: Shutting down and abandoning module Messaging (93)
+[2017.03.21-20.34.29:606][222]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (91)
+[2017.03.21-20.34.29:606][222]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (89)
+[2017.03.21-20.34.29:606][222]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (87)
+[2017.03.21-20.34.29:606][222]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (85)
+[2017.03.21-20.34.29:606][222]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (83)
+[2017.03.21-20.34.29:606][222]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (81)
+[2017.03.21-20.34.29:606][222]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (79)
+[2017.03.21-20.34.29:606][222]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (77)
+[2017.03.21-20.34.29:606][222]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (75)
+[2017.03.21-20.34.29:606][222]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (73)
+[2017.03.21-20.34.29:606][222]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (71)
+[2017.03.21-20.34.29:606][222]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (69)
+[2017.03.21-20.34.29:606][222]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (67)
+[2017.03.21-20.34.29:607][222]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (65)
+[2017.03.21-20.34.29:607][222]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (63)
+[2017.03.21-20.34.29:607][222]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (61)
+[2017.03.21-20.34.29:607][222]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (59)
+[2017.03.21-20.34.29:607][222]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (57)
+[2017.03.21-20.34.29:607][222]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (55)
+[2017.03.21-20.34.29:607][222]LogModuleManager: Shutting down and abandoning module InputCore (52)
+[2017.03.21-20.34.29:607][222]LogModuleManager: Shutting down and abandoning module Settings (50)
+[2017.03.21-20.34.29:607][222]LogModuleManager: Shutting down and abandoning module OculusRift (48)
+[2017.03.21-20.34.29:607][222]LogModuleManager: Shutting down and abandoning module GearVR (46)
+[2017.03.21-20.34.29:607][222]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (44)
+[2017.03.21-20.34.29:607][222]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (42)
+[2017.03.21-20.34.29:607][222]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (38)
+[2017.03.21-20.34.29:607][222]LogOnline:Display: Unloading online subsystem: NULL
+[2017.03.21-20.34.29:607][222]LogModuleManager: Shutting down and abandoning module XMPP (37)
+[2017.03.21-20.34.29:607][222]LogModuleManager: Shutting down and abandoning module HTTP (35)
+[2017.03.21-20.34.29:607][222]LogHttp:Display: Http module shutting down, but needs to wait on 2 outstanding Http requests:
+[2017.03.21-20.34.29:607][222]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BFADE7EFC-4A02-F5AC-0D9B-CFBBC08B1E0F%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.15.1-3348071%2B%2B%2BUE4%2BRelease-4.15&UserID=750ac638448b4cf87faad6878f8ba06c%7Cb36ec6f80e614795904645f80cf52a09%7C5b6804fd-5f09-4335-91ff-c0d243bd4d4e&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.03.21-20.34.29:607][222]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BFADE7EFC-4A02-F5AC-0D9B-CFBBC08B1E0F%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.15.1-3348071%2B%2B%2BUE4%2BRelease-4.15&UserID=750ac638448b4cf87faad6878f8ba06c%7Cb36ec6f80e614795904645f80cf52a09%7C5b6804fd-5f09-4335-91ff-c0d243bd4d4e&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.03.21-20.34.29:619][222]LogModuleManager: Shutting down and abandoning module SSL (34)
+[2017.03.21-20.34.29:621][222]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
+[2017.03.21-20.34.29:621][222]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
+[2017.03.21-20.34.29:621][222]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
+[2017.03.21-20.34.29:621][222]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2017.03.21-20.34.29:621][222]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2017.03.21-20.34.29:634][222]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
+[2017.03.21-20.34.29:634][222]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
+[2017.03.21-20.34.29:634][222]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
+[2017.03.21-20.34.29:634][222]LogModuleManager: Shutting down and abandoning module Renderer (14)
+[2017.03.21-20.34.29:634][222]LogModuleManager: Shutting down and abandoning module Engine (12)
+[2017.03.21-20.34.29:634][222]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
+[2017.03.21-20.34.29:634][222]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
+[2017.03.21-20.34.29:634][222]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2017.03.21-20.34.29:634][222]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2017.03.21-20.34.29:634][222]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2017.03.21-20.34.29:635][222]LogExit: Exiting.
+[2017.03.21-20.34.29:649][222]Log file closed, 03/21/17 16:34:29
