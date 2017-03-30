@@ -1,0 +1,958 @@
+﻿Log file open, 03/28/17 14:56:44
+LogInit:Display: Running engine for game: PTSD
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(2062101878) SRandInit(2062101878).
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.096377
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.15-CL-3348071
+LogInit: Engine Version: 4.15.1-3348071+++UE4+Release-4.15
+LogInit: Compatible Engine Version: 4.15.0-3299760+++UE4+Release-4.15
+LogInit: Net CL: 3299760
+LogDevObjectVersion: Number of dev versions registered: 14
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 8
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 14
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 22
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 12
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 3
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogInit: Compiled (64-bit): Mar 15 2017 16:52:47
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.15
+LogInit: Command line: -EpicPortal 
+LogInit: Base directory: C:/Games/UE_4.15/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.03.28-18.56.45:342][  0]LogInit: Selected Device Profile: [Windows]
+[2017.03.28-18.56.45:342][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.03.28-18.56.45:428][  0]LogInit: Computer: TSSKIES
+[2017.03.28-18.56.45:428][  0]LogInit: User: inner000
+[2017.03.28-18.56.45:428][  0]LogInit: CPU Page size=65536, Cores=4
+[2017.03.28-18.56.45:428][  0]LogInit: High frequency timer resolution =2.533205 MHz
+[2017.03.28-18.56.45:429][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
+[2017.03.28-18.56.45:429][  0]LogMemory: Platform Memory Stats for Windows
+[2017.03.28-18.56.45:429][  0]LogMemory: Process Physical Memory: 263.33 MB used, 263.33 MB peak
+[2017.03.28-18.56.45:429][  0]LogMemory: Process Virtual Memory: 262.76 MB used, 262.76 MB peak
+[2017.03.28-18.56.45:429][  0]LogMemory: Physical Memory: 5992.73 MB used,  2122.54 MB free, 8115.27 MB total
+[2017.03.28-18.56.45:429][  0]LogMemory: Virtual Memory: 645.13 MB used,  2122.54 MB free, 134217728.00 MB total
+[2017.03.28-18.56.45:859][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2017.03.28-18.56.55:137][  0]LogD3D11RHI: D3D11 adapters:
+[2017.03.28-18.56.55:173][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 860M' (Feature Level 11_0)
+[2017.03.28-18.56.55:173][  0]LogD3D11RHI:       4064/0/4057 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2017.03.28-18.56.55:180][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 4600' (Feature Level 11_0)
+[2017.03.28-18.56.55:180][  0]LogD3D11RHI:       112/0/2048 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2017.03.28-18.56.55:181][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.03.28-18.56.55:181][  0]LogD3D11RHI:       0/0/4057 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.03.28-18.56.55:181][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.03.28-18.56.55:186][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.03.28-18.56.55:186][  0]LogD3D11RHI:     GPU DeviceId: 0x1392 (for the marketing name, search the web for "GPU Device Id")
+[2017.03.28-18.56.55:186][  0]LogWindows: EnumDisplayDevices:
+[2017.03.28-18.56.55:186][  0]LogWindows:    0. 'Intel(R) HD Graphics 4600' (P:1 D:1)
+[2017.03.28-18.56.55:187][  0]LogWindows:    1. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2017.03.28-18.56.55:187][  0]LogWindows:    2. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2017.03.28-18.56.55:187][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2017.03.28-18.56.55:187][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 860M
+[2017.03.28-18.56.55:187][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2017.03.28-18.56.55:187][  0]LogD3D11RHI:      Driver Date: Unknown
+[2017.03.28-18.56.55:187][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.03.28-18.56.55:203][  0]LogD3D11RHI: Async texture creation enabled
+[2017.03.28-18.56.55:215][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2017.03.28-18.56.55:216][  0]LogShaderCompilers: Guid format shader working directory is 12 characters bigger than the processId version (../../../../../PTSD/PTSD-Project/PTSD/Intermediate/Shaders/WorkingDirectory/12232/).
+[2017.03.28-18.56.55:216][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/inner_000/AppData/Local/Temp/UnrealShaderWorkingDir/DB214FD842E0AE46C14F9A927CB25166/'.
+[2017.03.28-18.56.55:216][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.03.28-18.57.01:628][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.03.28-18.57.01:684][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.03.28-18.57.01:738][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.03.28-18.57.01:790][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.03.28-18.57.01:881][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.03.28-18.57.01:936][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.03.28-18.57.02:066][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.03.28-18.57.02:149][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.03.28-18.57.02:220][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.03.28-18.57.02:367][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.03.28-18.57.02:458][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.03.28-18.57.02:817][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.03.28-18.57.02:876][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.03.28-18.57.02:942][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.03.28-18.57.03:012][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.03.28-18.57.03:148][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.03.28-18.57.03:148][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.03.28-18.57.03:211][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.03.28-18.57.03:359][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.03.28-18.57.03:403][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.03.28-18.57.03:458][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.03.28-18.57.03:511][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.03.28-18.57.03:564][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.03.28-18.57.03:654][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.03.28-18.57.03:654][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.03.28-18.57.04:103][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.03.28-18.57.04:791][  0]LogDerivedDataCache: Loaded boot cache 0.69s 50MB C:/Users/inner_000/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.03.28-18.57.04:791][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/inner_000/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc
+[2017.03.28-18.57.04:791][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../PTSD/PTSD-Project/PTSD/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.03.28-18.57.04:791][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.03.28-18.57.04:791][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../PTSD/PTSD-Project/PTSD/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.03.28-18.57.04:791][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.03.28-18.57.04:810][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.03.28-18.57.04:822][  0]LogDerivedDataCache: Using Local data cache path C:/Users/inner_000/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.03.28-18.57.04:832][  0]LogSlate: Using Freetype 2.6.0
+[2017.03.28-18.57.04:866][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.03.28-18.57.04:866][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.03.28-18.57.07:522][  0]LogInit: Selected Device Profile: [Windows]
+[2017.03.28-18.57.07:525][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.03.28-18.57.07:724][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.03.28-18.57.07:764][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.03.28-18.57.07:808][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.03.28-18.57.07:808][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.03.28-18.57.07:808][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.03.28-18.57.08:517][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3299760, ProjectName: ptsd, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 1176372723
+[2017.03.28-18.57.08:564][  0]LogAssetRegistry: FAssetRegistry took 0.0215 seconds to start up
+[2017.03.28-18.57.08:616][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.027829 seconds
+[2017.03.28-18.57.08:624][  0]LogUObjectArray: 32493 objects as part of root set at end of initial load.
+[2017.03.28-18.57.08:624][  0]LogUObjectAllocator: 7077032 out of 0 bytes used by permanent object pool.
+[2017.03.28-18.57.08:624][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.03.28-18.57.08:686][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.03.28-18.57.37:032][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.03.28-18.57.37:073][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.03.28-18.57.37:955][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.03.28-18.57.38:598][  0]SourceControl: Info Source control is disabled
+[2017.03.28-18.57.38:649][  0]SourceControl: Info Source control is disabled
+[2017.03.28-18.57.38:696][  0]SourceControl: Info Source control is disabled
+[2017.03.28-18.57.38:743][  0]SourceControl: Info Source control is disabled
+[2017.03.28-18.57.40:475][  0]LogEngine: Initializing Engine...
+[2017.03.28-18.57.40:510][  0]LogHMD: Failed to initialize OpenVR with code 108
+[2017.03.28-18.57.41:283][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.03.28-18.57.41:289][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.28-18.57.41:301][  0]LogInit: FAudioDevice initialized.
+[2017.03.28-18.57.41:332][  0]LogDerivedDataCache: Saved boot cache 0.03s 50MB C:/Users/inner_000/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.03.28-18.57.41:342][  0]LogInit: Texture streaming: Enabled
+[2017.03.28-18.57.41:444][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.03.28-18.57.41:561][  0]LogInit: Transaction tracking system initialized
+[2017.03.28-18.57.41:920][  0]BlueprintLog: New page: Editor Load
+[2017.03.28-18.57.42:880][  0]LocalizationService: Info Localization service is disabled
+[2017.03.28-18.57.43:752][  0]LogConsoleResponse:Display: 
+[2017.03.28-18.57.44:353][  0]LogFileCache: Scanning file cache for directory 'C:/PTSD/PTSD-Project/PTSD/Content/' took 0.03s
+[2017.03.28-18.57.44:353][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.03.28-18.57.44:353][  0]LogCook:Display: Mobile HDR setting 0
+[2017.03.28-18.57.45:688][  0]SourceControl: Info Source control is disabled
+[2017.03.28-18.57.45:688][  0]Cmd: MAP LOAD FILE="../../../Engine/Content/Maps/Templates/Template_Default.umap" TEMPLATE=1 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.03.28-18.57.45:689][  0]LightingResults: New page: Lighting Build
+[2017.03.28-18.57.45:728][  0]MapCheck: New page: Map Check
+[2017.03.28-18.57.45:728][  0]LightingResults: New page: Lighting Build
+[2017.03.28-18.57.46:070][  0]LogAIModule: Creating AISystem for world Untitled_1
+[2017.03.28-18.57.46:087][  0]LogActorComponent: RegisterComponentWithWorld: (/Temp/Untitled_1.Untitled_1:PersistentLevel.WorldSettings_1.StaticMeshComponent0) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.03.28-18.57.46:111][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.03.28-18.57.46:114][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.03.28-18.57.46:152][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 37.447ms to complete.
+[2017.03.28-18.57.46:152][  0]LogFileHelpers: Loading map 'Template_Default' took 0.463
+[2017.03.28-18.57.49:122][  0]LogCollectionManager: Loaded 0 collections in 0.001582 seconds
+[2017.03.28-18.57.49:277][  0]LogFileCache: Scanning file cache for directory 'C:/PTSD/PTSD-Project/PTSD/Saved/Collections/' took 0.01s
+[2017.03.28-18.57.49:277][  0]LogFileCache: Scanning file cache for directory 'C:/PTSD/PTSD-Project/PTSD/Content/Developers/inner000/Collections/' took 0.01s
+[2017.03.28-18.57.49:277][  0]LogFileCache: Scanning file cache for directory 'C:/PTSD/PTSD-Project/PTSD/Content/Collections/' took 0.01s
+[2017.03.28-18.57.49:277][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000003 seconds
+[2017.03.28-18.57.49:304][  0]LogContentBrowser: Native class hierarchy populated in 0.0256 seconds. Added 2246 classes and 455 folders.
+[2017.03.28-18.57.49:437][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.03.28-18.57.49:459][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.021 s
+[2017.03.28-18.57.49:589][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2017.03.28-18.57.51:562][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2017.03.28-18.57.51:735][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.03.28-18.57.52:179][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.03.28-18.57.52:325][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
+[2017.03.28-18.57.52:325][  0]LogLoad: (Engine Initialization) Total time: 73.01 seconds
+[2017.03.28-18.57.52:325][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.27 seconds
+[2017.03.28-18.57.52:325][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.03.28-18.57.52:325][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.03.28-18.57.52:665][  0]LogOcInput: OculusInput pre-init called
+[2017.03.28-18.57.53:220][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.03.28-18.57.53:241][  0]LogSlate: Took 0.019451 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.03.28-18.57.53:265][  0]LogSlate: Took 0.019674 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.03.28-18.57.53:392][  0]LogSlate: Took 0.028228 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.03.28-18.57.55:556][  0]LogRenderer: Reallocating scene render targets to support 1060x896 NumSamples 1 (Frame:2).
+[2017.03.28-18.57.56:546][  2]LogAssetRegistry: Asset discovery search completed in 48.0043 seconds
+[2017.03.28-18.57.56:546][  2]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000007 seconds (found 0 objects)
+[2017.03.28-18.57.56:547][  2]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000023 seconds (updated 0 objects)
+[2017.03.28-18.57.59:810][ 11]LogSlate: Took 0.034236 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.03.28-19.01.27:999][308]LogSlate: Took 0.000149 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.03.28-19.01.28:904][308]LogSlate: Took 0.015952 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.03.28-19.01.29:057][308]LogAIModule: Creating AISystem for world Prototype
+[2017.03.28-19.01.29:280][308]Cmd: MAP LOAD FILE="../../../../../PTSD/PTSD-Project/PTSD/Content/Prototype.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.03.28-19.01.29:280][308]LightingResults: New page: Lighting Build
+[2017.03.28-19.01.29:282][308]LoadErrors: New page: Loading map: Prototype.umap
+[2017.03.28-19.01.29:283][308]MapCheck: New page: Map Check
+[2017.03.28-19.01.29:283][308]LightingResults: New page: Lighting Build
+[2017.03.28-19.01.29:609][308]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.03.28-19.01.29:660][308]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.03.28-19.01.29:699][308]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 39.266ms to complete.
+[2017.03.28-19.01.29:700][308]LogFileHelpers: Loading map 'Prototype' took 0.429
+[2017.03.28-19.01.31:618][382]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.28-19.01.31:674][382]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.28-19.01.31:737][382]PIE: New page: PIE session: Prototype (Mar 28, 2017, 11:01:31 AM)
+[2017.03.28-19.01.31:791][382]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Prototype
+[2017.03.28-19.01.31:855][382]LogPlayLevel: PIE: StaticDuplicateObject took: (0.063582s)
+[2017.03.28-19.01.31:856][382]LogAIModule: Creating AISystem for world Prototype
+[2017.03.28-19.01.31:856][382]LogPlayLevel: PIE: World Init took: (0.000851s)
+[2017.03.28-19.01.31:879][382]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Prototype.Prototype to /Game/UEDPIE_0_Prototype.Prototype (0.108548s)
+[2017.03.28-19.01.31:913][382]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.28-19.01.31:922][382]LogInit: FAudioDevice initialized.
+[2017.03.28-19.01.32:230][382]LogLoad: Game class is 'VRGameMode_C'
+[2017.03.28-19.01.32:473][382]LogWorld: Bringing World /Game/UEDPIE_0_Prototype.Prototype up for play (max tick rate 0) at 2017.03.28-15.01.32
+[2017.03.28-19.01.32:599][382]LogWorld: Bringing up level for play took: 0.193095
+[2017.03.28-19.01.33:080][382]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0006 seconds. Added 11 classes and 0 folders.
+[2017.03.28-19.01.33:297][382]PIE: Info Play in editor start time for /Game/UEDPIE_0_Prototype 2.585
+[2017.03.28-19.01.56:844][ 19]LogBlueprintUserMessages: [FAKEVR_C_0] Name: Kevin
+Date: 0/0/0
+Decisions ----------------------------------
+Chair:  Throw away StartTime: 00:06.38 EndTime: 23.178688 
+
+[2017.03.28-19.01.56:861][ 19]LogScript:Warning: Attempted to access DecisionUI_C_0 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_0 is pending kill
+	FAKEVR_C /Game/UEDPIE_0_Prototype.Prototype:PersistentLevel.FAKEVR_C_0
+	Function /Game/FAKEVR.FAKEVR_C:ExecuteUbergraph_FAKEVR:10A8
+[2017.03.28-19.01.56:888][ 19]PIE:Error: Error Blueprint Runtime Error: Attempted to access DecisionUI_C_0 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_0 is pending kill from function: 'ExecuteUbergraph_FAKEVR' from node: Branch in graph: EventGraph in object: FAKEVR with description: Attempted to access DecisionUI_C_0 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_0 is pending kill
+[2017.03.28-19.01.56:888][ 19]LogScript:Warning: Attempted to access DecisionUI_C_0 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_0 is pending kill
+	FAKEVR_C /Game/UEDPIE_0_Prototype.Prototype:PersistentLevel.FAKEVR_C_0
+	Function /Game/FAKEVR.FAKEVR_C:ExecuteUbergraph_FAKEVR:1198
+[2017.03.28-19.01.56:888][ 19]PIE:Error: Error Blueprint Runtime Error: Attempted to access DecisionUI_C_0 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_0 is pending kill from function: 'ExecuteUbergraph_FAKEVR' from node: Branch in graph: EventGraph in object: FAKEVR with description: Attempted to access DecisionUI_C_0 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_0 is pending kill
+[2017.03.28-19.01.56:888][ 19]LogScript:Warning: Attempted to access DecisionUI_C_0 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_0 is pending kill
+	FAKEVR_C /Game/UEDPIE_0_Prototype.Prototype:PersistentLevel.FAKEVR_C_0
+	Function /Game/FAKEVR.FAKEVR_C:ExecuteUbergraph_FAKEVR:0BE8
+[2017.03.28-19.01.56:888][ 19]PIE:Error: Error Blueprint Runtime Error: Attempted to access DecisionUI_C_0 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_0 is pending kill from function: 'ExecuteUbergraph_FAKEVR' from node: Branch in graph: EventGraph in object: FAKEVR with description: Attempted to access DecisionUI_C_0 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_0 is pending kill
+[2017.03.28-19.02.09:617][545]LogBlueprintUserMessages: [FAKEVR_C_0] Name: Kevin
+Date: 0/0/0
+Decisions ----------------------------------
+Chair:  Throw away StartTime: 00:06.38 EndTime: 23.178688 
+FireAlarm:  Throw away StartTime: 00:34.21 EndTime: 36.001488 
+
+[2017.03.28-19.02.09:617][545]LogScript:Warning: Attempted to access DecisionUI_C_1 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_1 is pending kill
+	FAKEVR_C /Game/UEDPIE_0_Prototype.Prototype:PersistentLevel.FAKEVR_C_0
+	Function /Game/FAKEVR.FAKEVR_C:ExecuteUbergraph_FAKEVR:10A8
+[2017.03.28-19.02.09:617][545]PIE:Error: Error Blueprint Runtime Error: Attempted to access DecisionUI_C_1 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_1 is pending kill from function: 'ExecuteUbergraph_FAKEVR' from node: Branch in graph: EventGraph in object: FAKEVR with description: Attempted to access DecisionUI_C_1 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_1 is pending kill
+[2017.03.28-19.02.09:617][545]LogScript:Warning: Attempted to access DecisionUI_C_1 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_1 is pending kill
+	FAKEVR_C /Game/UEDPIE_0_Prototype.Prototype:PersistentLevel.FAKEVR_C_0
+	Function /Game/FAKEVR.FAKEVR_C:ExecuteUbergraph_FAKEVR:1198
+[2017.03.28-19.02.09:618][545]PIE:Error: Error Blueprint Runtime Error: Attempted to access DecisionUI_C_1 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_1 is pending kill from function: 'ExecuteUbergraph_FAKEVR' from node: Branch in graph: EventGraph in object: FAKEVR with description: Attempted to access DecisionUI_C_1 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_1 is pending kill
+[2017.03.28-19.02.09:618][545]LogScript:Warning: Attempted to access DecisionUI_C_1 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_1 is pending kill
+	FAKEVR_C /Game/UEDPIE_0_Prototype.Prototype:PersistentLevel.FAKEVR_C_0
+	Function /Game/FAKEVR.FAKEVR_C:ExecuteUbergraph_FAKEVR:0BE8
+[2017.03.28-19.02.09:618][545]PIE:Error: Error Blueprint Runtime Error: Attempted to access DecisionUI_C_1 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_1 is pending kill from function: 'ExecuteUbergraph_FAKEVR' from node: Branch in graph: EventGraph in object: FAKEVR with description: Attempted to access DecisionUI_C_1 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_1 is pending kill
+[2017.03.28-19.02.21:641][631]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0008 seconds. Added 112 classes and 0 folders.
+[2017.03.28-19.02.23:716][631]LogSlate: Took 0.064258 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2017.03.28-19.02.24:686][632]LogSlate: Took 0.028473 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2017.03.28-19.03.46:921][128]BlueprintLog: New page: Compile FAKEVR
+[2017.03.28-19.03.48:448][159]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FAKEVR" FILE="../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset" SILENT=true
+[2017.03.28-19.03.48:706][159]LogSavePackage: Save=210.43ms
+[2017.03.28-19.03.48:706][159]LogSavePackage: Moving '../../../../../PTSD/PTSD-Project/PTSD/Saved/FAKEVR1667C4924B568E0C21AF249C02753E63.tmp' to '../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset'
+[2017.03.28-19.03.48:708][159]LogSavePackage:Display: Finished SavePackage ../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset
+[2017.03.28-19.03.49:075][183]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.28-19.03.49:097][183]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.28-19.03.49:097][183]PIE: New page: PIE session: Prototype (Mar 28, 2017, 11:03:49 AM)
+[2017.03.28-19.03.49:097][183]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Prototype
+[2017.03.28-19.03.49:100][183]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003050s)
+[2017.03.28-19.03.49:101][183]LogAIModule: Creating AISystem for world Prototype
+[2017.03.28-19.03.49:102][183]LogPlayLevel: PIE: World Init took: (0.001254s)
+[2017.03.28-19.03.49:102][183]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Prototype.Prototype to /Game/UEDPIE_0_Prototype.Prototype (0.004487s)
+[2017.03.28-19.03.49:187][183]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.28-19.03.49:197][183]LogInit: FAudioDevice initialized.
+[2017.03.28-19.03.49:314][183]LogLoad: Game class is 'VRGameMode_C'
+[2017.03.28-19.03.49:317][183]LogWorld: Bringing World /Game/UEDPIE_0_Prototype.Prototype up for play (max tick rate 0) at 2017.03.28-15.03.49
+[2017.03.28-19.03.49:317][183]LogWorld: Bringing up level for play took: 0.001929
+[2017.03.28-19.03.49:331][183]PIE: Info Play in editor start time for /Game/UEDPIE_0_Prototype 0.62
+[2017.03.28-19.03.49:362][183]LogRenderer: Reallocating scene render targets to support 1292x896 NumSamples 1 (Frame:6703).
+[2017.03.28-19.04.27:169][640]BlueprintLog: New page: Compile FAKEVR
+[2017.03.28-19.04.28:244][679]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FAKEVR" FILE="../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset" SILENT=true
+[2017.03.28-19.04.28:343][679]LogSavePackage: Save=94.52ms
+[2017.03.28-19.04.28:343][679]LogSavePackage: Moving '../../../../../PTSD/PTSD-Project/PTSD/Saved/FAKEVR5BDE29864D43B3F06BDF1DBCA5C67F34.tmp' to '../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset'
+[2017.03.28-19.04.28:345][679]LogSavePackage:Display: Finished SavePackage ../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset
+[2017.03.28-19.04.28:920][734]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.28-19.04.28:941][734]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.28-19.04.28:941][734]PIE: New page: PIE session: Prototype (Mar 28, 2017, 11:04:28 AM)
+[2017.03.28-19.04.28:941][734]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Prototype
+[2017.03.28-19.04.28:944][734]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002674s)
+[2017.03.28-19.04.28:944][734]LogAIModule: Creating AISystem for world Prototype
+[2017.03.28-19.04.28:944][734]LogPlayLevel: PIE: World Init took: (0.000736s)
+[2017.03.28-19.04.28:944][734]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Prototype.Prototype to /Game/UEDPIE_0_Prototype.Prototype (0.003615s)
+[2017.03.28-19.04.28:961][734]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.28-19.04.28:970][734]LogInit: FAudioDevice initialized.
+[2017.03.28-19.04.29:026][734]LogLoad: Game class is 'VRGameMode_C'
+[2017.03.28-19.04.29:028][734]LogWorld: Bringing World /Game/UEDPIE_0_Prototype.Prototype up for play (max tick rate 0) at 2017.03.28-15.04.29
+[2017.03.28-19.04.29:028][734]LogWorld: Bringing up level for play took: 0.001781
+[2017.03.28-19.04.29:042][734]PIE: Info Play in editor start time for /Game/UEDPIE_0_Prototype 0.331
+[2017.03.28-19.05.03:955][911]BlueprintLog: New page: Compile FAKEVR
+[2017.03.28-19.05.05:389][993]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FAKEVR" FILE="../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset" SILENT=true
+[2017.03.28-19.05.05:491][993]LogSavePackage: Save=96.06ms
+[2017.03.28-19.05.05:491][993]LogSavePackage: Moving '../../../../../PTSD/PTSD-Project/PTSD/Saved/FAKEVR034B982245E45712A62855972A38A4B6.tmp' to '../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset'
+[2017.03.28-19.05.05:493][993]LogSavePackage:Display: Finished SavePackage ../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset
+[2017.03.28-19.05.05:937][ 29]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.28-19.05.05:956][ 29]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.28-19.05.05:956][ 29]PIE: New page: PIE session: Prototype (Mar 28, 2017, 11:05:05 AM)
+[2017.03.28-19.05.05:956][ 29]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Prototype
+[2017.03.28-19.05.05:959][ 29]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002506s)
+[2017.03.28-19.05.05:960][ 29]LogAIModule: Creating AISystem for world Prototype
+[2017.03.28-19.05.05:960][ 29]LogPlayLevel: PIE: World Init took: (0.000950s)
+[2017.03.28-19.05.05:960][ 29]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Prototype.Prototype to /Game/UEDPIE_0_Prototype.Prototype (0.003731s)
+[2017.03.28-19.05.05:978][ 29]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.28-19.05.05:987][ 29]LogInit: FAudioDevice initialized.
+[2017.03.28-19.05.06:041][ 29]LogLoad: Game class is 'VRGameMode_C'
+[2017.03.28-19.05.06:044][ 29]LogWorld: Bringing World /Game/UEDPIE_0_Prototype.Prototype up for play (max tick rate 0) at 2017.03.28-15.05.06
+[2017.03.28-19.05.06:044][ 29]LogWorld: Bringing up level for play took: 0.001949
+[2017.03.28-19.05.06:059][ 29]PIE: Info Play in editor start time for /Game/UEDPIE_0_Prototype -0.652
+[2017.03.28-19.05.33:698][524]BlueprintLog: New page: Compile FAKEVR
+[2017.03.28-19.05.34:668][555]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FAKEVR" FILE="../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset" SILENT=true
+[2017.03.28-19.05.34:770][555]LogSavePackage: Save=96.88ms
+[2017.03.28-19.05.34:770][555]LogSavePackage: Moving '../../../../../PTSD/PTSD-Project/PTSD/Saved/FAKEVRD34703A244DFCF62808DFCBFD1048F92.tmp' to '../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset'
+[2017.03.28-19.05.34:773][555]LogSavePackage:Display: Finished SavePackage ../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset
+[2017.03.28-19.05.35:150][590]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.28-19.05.35:170][590]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.28-19.05.35:170][590]PIE: New page: PIE session: Prototype (Mar 28, 2017, 11:05:35 AM)
+[2017.03.28-19.05.35:170][590]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Prototype
+[2017.03.28-19.05.35:172][590]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002417s)
+[2017.03.28-19.05.35:173][590]LogAIModule: Creating AISystem for world Prototype
+[2017.03.28-19.05.35:173][590]LogPlayLevel: PIE: World Init took: (0.000687s)
+[2017.03.28-19.05.35:173][590]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Prototype.Prototype to /Game/UEDPIE_0_Prototype.Prototype (0.003299s)
+[2017.03.28-19.05.35:189][590]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.28-19.05.35:198][590]LogInit: FAudioDevice initialized.
+[2017.03.28-19.05.35:248][590]LogLoad: Game class is 'VRGameMode_C'
+[2017.03.28-19.05.35:252][590]LogWorld: Bringing World /Game/UEDPIE_0_Prototype.Prototype up for play (max tick rate 0) at 2017.03.28-15.05.35
+[2017.03.28-19.05.35:253][590]LogWorld: Bringing up level for play took: 0.002245
+[2017.03.28-19.05.35:266][590]PIE: Info Play in editor start time for /Game/UEDPIE_0_Prototype 0.555
+[2017.03.28-19.05.41:491][132]BlueprintLog: New page: Compile FAKEVR
+[2017.03.28-19.05.42:364][145]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FAKEVR" FILE="../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset" SILENT=true
+[2017.03.28-19.05.42:496][145]LogSavePackage: Save=124.29ms
+[2017.03.28-19.05.42:496][145]LogSavePackage: Moving '../../../../../PTSD/PTSD-Project/PTSD/Saved/FAKEVRA73285B4465F5D77BF5A3DBABDFFAE48.tmp' to '../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset'
+[2017.03.28-19.05.42:498][145]LogSavePackage:Display: Finished SavePackage ../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset
+[2017.03.28-19.05.43:102][185]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.28-19.05.43:122][185]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.28-19.05.43:122][185]PIE: New page: PIE session: Prototype (Mar 28, 2017, 11:05:43 AM)
+[2017.03.28-19.05.43:122][185]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Prototype
+[2017.03.28-19.05.43:124][185]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002543s)
+[2017.03.28-19.05.43:125][185]LogAIModule: Creating AISystem for world Prototype
+[2017.03.28-19.05.43:125][185]LogPlayLevel: PIE: World Init took: (0.000780s)
+[2017.03.28-19.05.43:125][185]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Prototype.Prototype to /Game/UEDPIE_0_Prototype.Prototype (0.003558s)
+[2017.03.28-19.05.43:143][185]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.28-19.05.43:152][185]LogInit: FAudioDevice initialized.
+[2017.03.28-19.05.43:205][185]LogLoad: Game class is 'VRGameMode_C'
+[2017.03.28-19.05.43:210][185]LogWorld: Bringing World /Game/UEDPIE_0_Prototype.Prototype up for play (max tick rate 0) at 2017.03.28-15.05.43
+[2017.03.28-19.05.43:211][185]LogWorld: Bringing up level for play took: 0.004378
+[2017.03.28-19.05.43:227][185]PIE: Info Play in editor start time for /Game/UEDPIE_0_Prototype 0.515
+[2017.03.28-19.06.32:255][452]BlueprintLog: New page: Compile FAKEVR
+[2017.03.28-19.06.33:296][483]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FAKEVR" FILE="../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset" SILENT=true
+[2017.03.28-19.06.33:397][483]LogSavePackage: Save=95.58ms
+[2017.03.28-19.06.33:397][483]LogSavePackage: Moving '../../../../../PTSD/PTSD-Project/PTSD/Saved/FAKEVREB7B60534C04A131FBE9B8A8380C8C75.tmp' to '../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset'
+[2017.03.28-19.06.33:399][483]LogSavePackage:Display: Finished SavePackage ../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset
+[2017.03.28-19.06.33:796][519]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.28-19.06.33:816][519]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.28-19.06.33:816][519]PIE: New page: PIE session: Prototype (Mar 28, 2017, 11:06:33 AM)
+[2017.03.28-19.06.33:816][519]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Prototype
+[2017.03.28-19.06.33:818][519]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002455s)
+[2017.03.28-19.06.33:819][519]LogAIModule: Creating AISystem for world Prototype
+[2017.03.28-19.06.33:819][519]LogPlayLevel: PIE: World Init took: (0.000915s)
+[2017.03.28-19.06.33:819][519]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Prototype.Prototype to /Game/UEDPIE_0_Prototype.Prototype (0.003576s)
+[2017.03.28-19.06.33:835][519]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.28-19.06.33:844][519]LogInit: FAudioDevice initialized.
+[2017.03.28-19.06.33:894][519]LogLoad: Game class is 'VRGameMode_C'
+[2017.03.28-19.06.33:896][519]LogWorld: Bringing World /Game/UEDPIE_0_Prototype.Prototype up for play (max tick rate 0) at 2017.03.28-15.06.33
+[2017.03.28-19.06.33:896][519]LogWorld: Bringing up level for play took: 0.001885
+[2017.03.28-19.06.33:911][519]PIE: Info Play in editor start time for /Game/UEDPIE_0_Prototype -0.801
+[2017.03.28-19.07.13:226][ 69]BlueprintLog: New page: Compile FAKEVR
+[2017.03.28-19.07.14:303][107]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FAKEVR" FILE="../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset" SILENT=true
+[2017.03.28-19.07.14:406][107]LogSavePackage: Save=95.84ms
+[2017.03.28-19.07.14:406][107]LogSavePackage: Moving '../../../../../PTSD/PTSD-Project/PTSD/Saved/FAKEVRBF8D9E4646C6156A345EBDB19B4D3B1A.tmp' to '../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset'
+[2017.03.28-19.07.14:408][107]LogSavePackage:Display: Finished SavePackage ../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset
+[2017.03.28-19.07.15:209][180]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.28-19.07.15:229][180]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.28-19.07.15:229][180]PIE: New page: PIE session: Prototype (Mar 28, 2017, 11:07:15 AM)
+[2017.03.28-19.07.15:229][180]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Prototype
+[2017.03.28-19.07.15:232][180]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002648s)
+[2017.03.28-19.07.15:233][180]LogAIModule: Creating AISystem for world Prototype
+[2017.03.28-19.07.15:233][180]LogPlayLevel: PIE: World Init took: (0.001053s)
+[2017.03.28-19.07.15:233][180]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Prototype.Prototype to /Game/UEDPIE_0_Prototype.Prototype (0.003930s)
+[2017.03.28-19.07.15:251][180]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.28-19.07.15:261][180]LogInit: FAudioDevice initialized.
+[2017.03.28-19.07.15:313][180]LogLoad: Game class is 'VRGameMode_C'
+[2017.03.28-19.07.15:316][180]LogWorld: Bringing World /Game/UEDPIE_0_Prototype.Prototype up for play (max tick rate 0) at 2017.03.28-15.07.15
+[2017.03.28-19.07.15:316][180]LogWorld: Bringing up level for play took: 0.001897
+[2017.03.28-19.07.15:330][180]PIE: Info Play in editor start time for /Game/UEDPIE_0_Prototype 0.619
+[2017.03.28-19.08.48:933][355]BlueprintLog: New page: Compile FAKEVR
+[2017.03.28-19.08.49:986][392]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FAKEVR" FILE="../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset" SILENT=true
+[2017.03.28-19.08.50:098][392]LogSavePackage: Save=98.95ms
+[2017.03.28-19.08.50:098][392]LogSavePackage: Moving '../../../../../PTSD/PTSD-Project/PTSD/Saved/FAKEVRBE152318495672821992B88F10F0F8ED.tmp' to '../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset'
+[2017.03.28-19.08.50:100][392]LogSavePackage:Display: Finished SavePackage ../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset
+[2017.03.28-19.08.50:559][431]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.28-19.08.50:577][431]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.28-19.08.50:577][431]PIE: New page: PIE session: Prototype (Mar 28, 2017, 11:08:50 AM)
+[2017.03.28-19.08.50:577][431]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Prototype
+[2017.03.28-19.08.50:581][431]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003928s)
+[2017.03.28-19.08.50:582][431]LogAIModule: Creating AISystem for world Prototype
+[2017.03.28-19.08.50:582][431]LogPlayLevel: PIE: World Init took: (0.000795s)
+[2017.03.28-19.08.50:582][431]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Prototype.Prototype to /Game/UEDPIE_0_Prototype.Prototype (0.004931s)
+[2017.03.28-19.08.50:598][431]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.28-19.08.50:608][431]LogInit: FAudioDevice initialized.
+[2017.03.28-19.08.50:657][431]LogLoad: Game class is 'VRGameMode_C'
+[2017.03.28-19.08.50:659][431]LogWorld: Bringing World /Game/UEDPIE_0_Prototype.Prototype up for play (max tick rate 0) at 2017.03.28-15.08.50
+[2017.03.28-19.08.50:659][431]LogWorld: Bringing up level for play took: 0.001701
+[2017.03.28-19.08.50:675][431]PIE: Info Play in editor start time for /Game/UEDPIE_0_Prototype -0.037
+[2017.03.28-19.09.16:876][849]BlueprintLog: New page: Compile FAKEVR
+[2017.03.28-19.09.18:006][884]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FAKEVR" FILE="../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset" SILENT=true
+[2017.03.28-19.09.18:110][884]LogSavePackage: Save=96.53ms
+[2017.03.28-19.09.18:110][884]LogSavePackage: Moving '../../../../../PTSD/PTSD-Project/PTSD/Saved/FAKEVRBCD4DA9F4E084D03041349A47CA7FD31.tmp' to '../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset'
+[2017.03.28-19.09.18:112][884]LogSavePackage:Display: Finished SavePackage ../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset
+[2017.03.28-19.09.18:606][927]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.28-19.09.18:626][927]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.28-19.09.18:626][927]PIE: New page: PIE session: Prototype (Mar 28, 2017, 11:09:18 AM)
+[2017.03.28-19.09.18:626][927]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Prototype
+[2017.03.28-19.09.18:629][927]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002785s)
+[2017.03.28-19.09.18:630][927]LogAIModule: Creating AISystem for world Prototype
+[2017.03.28-19.09.18:630][927]LogPlayLevel: PIE: World Init took: (0.000855s)
+[2017.03.28-19.09.18:630][927]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Prototype.Prototype to /Game/UEDPIE_0_Prototype.Prototype (0.003878s)
+[2017.03.28-19.09.18:646][927]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.28-19.09.18:655][927]LogInit: FAudioDevice initialized.
+[2017.03.28-19.09.18:710][927]LogLoad: Game class is 'VRGameMode_C'
+[2017.03.28-19.09.18:714][927]LogWorld: Bringing World /Game/UEDPIE_0_Prototype.Prototype up for play (max tick rate 0) at 2017.03.28-15.09.18
+[2017.03.28-19.09.18:714][927]LogWorld: Bringing up level for play took: 0.001752
+[2017.03.28-19.09.18:728][927]PIE: Info Play in editor start time for /Game/UEDPIE_0_Prototype 0.017
+[2017.03.28-19.10.04:932][369]BlueprintLog: New page: Compile FAKEVR
+[2017.03.28-19.10.06:077][407]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FAKEVR" FILE="../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset" SILENT=true
+[2017.03.28-19.10.06:183][407]LogSavePackage: Save=99.85ms
+[2017.03.28-19.10.06:183][407]LogSavePackage: Moving '../../../../../PTSD/PTSD-Project/PTSD/Saved/FAKEVR179250D3401898AFEBEEB99A78FA7C5A.tmp' to '../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset'
+[2017.03.28-19.10.06:185][407]LogSavePackage:Display: Finished SavePackage ../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset
+[2017.03.28-19.10.06:831][461]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.28-19.10.06:849][461]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.28-19.10.06:849][461]PIE: New page: PIE session: Prototype (Mar 28, 2017, 11:10:06 AM)
+[2017.03.28-19.10.06:850][461]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Prototype
+[2017.03.28-19.10.06:852][461]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002493s)
+[2017.03.28-19.10.06:853][461]LogAIModule: Creating AISystem for world Prototype
+[2017.03.28-19.10.06:853][461]LogPlayLevel: PIE: World Init took: (0.000788s)
+[2017.03.28-19.10.06:853][461]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Prototype.Prototype to /Game/UEDPIE_0_Prototype.Prototype (0.003512s)
+[2017.03.28-19.10.06:871][461]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.28-19.10.06:880][461]LogInit: FAudioDevice initialized.
+[2017.03.28-19.10.06:931][461]LogLoad: Game class is 'VRGameMode_C'
+[2017.03.28-19.10.06:933][461]LogWorld: Bringing World /Game/UEDPIE_0_Prototype.Prototype up for play (max tick rate 0) at 2017.03.28-15.10.06
+[2017.03.28-19.10.06:933][461]LogWorld: Bringing up level for play took: 0.001804
+[2017.03.28-19.10.06:950][461]PIE: Info Play in editor start time for /Game/UEDPIE_0_Prototype 0.238
+[2017.03.28-19.10.13:841][ 26]BlueprintLog: New page: Compile FAKEVR
+[2017.03.28-19.10.15:010][ 71]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FAKEVR" FILE="../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset" SILENT=true
+[2017.03.28-19.10.15:114][ 71]LogSavePackage: Save=98.11ms
+[2017.03.28-19.10.15:114][ 71]LogSavePackage: Moving '../../../../../PTSD/PTSD-Project/PTSD/Saved/FAKEVR3B29866C4010912CD061928683AB4948.tmp' to '../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset'
+[2017.03.28-19.10.15:117][ 71]LogSavePackage:Display: Finished SavePackage ../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset
+[2017.03.28-19.10.15:610][115]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.28-19.10.15:629][115]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.28-19.10.15:629][115]PIE: New page: PIE session: Prototype (Mar 28, 2017, 11:10:15 AM)
+[2017.03.28-19.10.15:629][115]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Prototype
+[2017.03.28-19.10.15:632][115]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002401s)
+[2017.03.28-19.10.15:632][115]LogAIModule: Creating AISystem for world Prototype
+[2017.03.28-19.10.15:633][115]LogPlayLevel: PIE: World Init took: (0.000977s)
+[2017.03.28-19.10.15:633][115]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Prototype.Prototype to /Game/UEDPIE_0_Prototype.Prototype (0.003647s)
+[2017.03.28-19.10.15:649][115]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.28-19.10.15:657][115]LogInit: FAudioDevice initialized.
+[2017.03.28-19.10.15:708][115]LogLoad: Game class is 'VRGameMode_C'
+[2017.03.28-19.10.15:710][115]LogWorld: Bringing World /Game/UEDPIE_0_Prototype.Prototype up for play (max tick rate 0) at 2017.03.28-15.10.15
+[2017.03.28-19.10.15:710][115]LogWorld: Bringing up level for play took: 0.001769
+[2017.03.28-19.10.15:725][115]PIE: Info Play in editor start time for /Game/UEDPIE_0_Prototype 1.013
+[2017.03.28-19.10.47:031][827]BlueprintLog: New page: Compile FAKEVR
+[2017.03.28-19.10.48:222][870]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FAKEVR" FILE="../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset" SILENT=true
+[2017.03.28-19.10.48:327][870]LogSavePackage: Save=98.64ms
+[2017.03.28-19.10.48:327][870]LogSavePackage: Moving '../../../../../PTSD/PTSD-Project/PTSD/Saved/FAKEVRBFF383D7481B0548529F1499E2C0FDCB.tmp' to '../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset'
+[2017.03.28-19.10.48:328][870]LogSavePackage:Display: Finished SavePackage ../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset
+[2017.03.28-19.10.48:941][922]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.28-19.10.48:960][922]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.28-19.10.48:960][922]PIE: New page: PIE session: Prototype (Mar 28, 2017, 11:10:48 AM)
+[2017.03.28-19.10.48:960][922]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Prototype
+[2017.03.28-19.10.48:963][922]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002391s)
+[2017.03.28-19.10.48:963][922]LogAIModule: Creating AISystem for world Prototype
+[2017.03.28-19.10.48:963][922]LogPlayLevel: PIE: World Init took: (0.000728s)
+[2017.03.28-19.10.48:964][922]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Prototype.Prototype to /Game/UEDPIE_0_Prototype.Prototype (0.003340s)
+[2017.03.28-19.10.48:979][922]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.28-19.10.48:988][922]LogInit: FAudioDevice initialized.
+[2017.03.28-19.10.49:043][922]LogLoad: Game class is 'VRGameMode_C'
+[2017.03.28-19.10.49:046][922]LogWorld: Bringing World /Game/UEDPIE_0_Prototype.Prototype up for play (max tick rate 0) at 2017.03.28-15.10.49
+[2017.03.28-19.10.49:046][922]LogWorld: Bringing up level for play took: 0.002045
+[2017.03.28-19.10.49:061][922]PIE: Info Play in editor start time for /Game/UEDPIE_0_Prototype 0.349
+[2017.03.28-19.11.36:774][911]BlueprintLog: New page: Compile FAKEVR
+[2017.03.28-19.11.37:851][937]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FAKEVR" FILE="../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset" SILENT=true
+[2017.03.28-19.11.37:957][937]LogSavePackage: Save=98.91ms
+[2017.03.28-19.11.37:957][937]LogSavePackage: Moving '../../../../../PTSD/PTSD-Project/PTSD/Saved/FAKEVRD9C9BEA641898020974B20AE2E80C413.tmp' to '../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset'
+[2017.03.28-19.11.37:959][937]LogSavePackage:Display: Finished SavePackage ../../../../../PTSD/PTSD-Project/PTSD/Content/FAKEVR.uasset
+[2017.03.28-19.11.38:384][967]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.28-19.11.38:404][967]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.28-19.11.38:404][967]PIE: New page: PIE session: Prototype (Mar 28, 2017, 11:11:38 AM)
+[2017.03.28-19.11.38:404][967]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Prototype
+[2017.03.28-19.11.38:407][967]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002508s)
+[2017.03.28-19.11.38:407][967]LogAIModule: Creating AISystem for world Prototype
+[2017.03.28-19.11.38:408][967]LogPlayLevel: PIE: World Init took: (0.000760s)
+[2017.03.28-19.11.38:408][967]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Prototype.Prototype to /Game/UEDPIE_0_Prototype.Prototype (0.003454s)
+[2017.03.28-19.11.38:424][967]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.28-19.11.38:433][967]LogInit: FAudioDevice initialized.
+[2017.03.28-19.11.38:489][967]LogLoad: Game class is 'VRGameMode_C'
+[2017.03.28-19.11.38:492][967]LogWorld: Bringing World /Game/UEDPIE_0_Prototype.Prototype up for play (max tick rate 0) at 2017.03.28-15.11.38
+[2017.03.28-19.11.38:492][967]LogWorld: Bringing up level for play took: 0.001788
+[2017.03.28-19.11.38:507][967]PIE: Info Play in editor start time for /Game/UEDPIE_0_Prototype -0.205
+[2017.03.28-19.11.45:923][410]LogBlueprintUserMessages: [FAKEVR_C_0] Name: Kevin
+Date: 0/0/0
+Decisions ----------------------------------
+Chair:  Throw away StartTime: 00:05.95 EndTime: 7.549349 
+
+[2017.03.28-19.11.45:923][410]LogScript:Warning: Attempted to access DecisionUI_C_0 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_0 is pending kill
+	FAKEVR_C /Game/UEDPIE_0_Prototype.Prototype:PersistentLevel.FAKEVR_C_0
+	Function /Game/FAKEVR.FAKEVR_C:ExecuteUbergraph_FAKEVR:10A8
+[2017.03.28-19.11.45:923][410]PIE:Error: Error Blueprint Runtime Error: Attempted to access DecisionUI_C_0 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_0 is pending kill from function: 'ExecuteUbergraph_FAKEVR' from node: Branch in graph: EventGraph in object: FAKEVR with description: Attempted to access DecisionUI_C_0 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_0 is pending kill
+[2017.03.28-19.11.45:923][410]LogScript:Warning: Attempted to access DecisionUI_C_0 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_0 is pending kill
+	FAKEVR_C /Game/UEDPIE_0_Prototype.Prototype:PersistentLevel.FAKEVR_C_0
+	Function /Game/FAKEVR.FAKEVR_C:ExecuteUbergraph_FAKEVR:1198
+[2017.03.28-19.11.45:923][410]PIE:Error: Error Blueprint Runtime Error: Attempted to access DecisionUI_C_0 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_0 is pending kill from function: 'ExecuteUbergraph_FAKEVR' from node: Branch in graph: EventGraph in object: FAKEVR with description: Attempted to access DecisionUI_C_0 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_0 is pending kill
+[2017.03.28-19.11.45:923][410]LogScript:Warning: Attempted to access DecisionUI_C_0 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_0 is pending kill
+	FAKEVR_C /Game/UEDPIE_0_Prototype.Prototype:PersistentLevel.FAKEVR_C_0
+	Function /Game/FAKEVR.FAKEVR_C:ExecuteUbergraph_FAKEVR:0BE8
+[2017.03.28-19.11.45:923][410]PIE:Error: Error Blueprint Runtime Error: Attempted to access DecisionUI_C_0 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_0 is pending kill from function: 'ExecuteUbergraph_FAKEVR' from node: Branch in graph: EventGraph in object: FAKEVR with description: Attempted to access DecisionUI_C_0 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_0 is pending kill
+[2017.03.28-19.11.54:136][903]LogBlueprintUserMessages: [FAKEVR_C_0] Name: Kevin
+Date: 0/0/0
+Decisions ----------------------------------
+Chair:  Throw away StartTime: 00:05.95 EndTime: 7.549349 
+FireAlarm:  Keep StartTime: 00:13.38 EndTime: 15.763359 
+
+[2017.03.28-19.11.54:137][903]LogScript:Warning: Attempted to access DecisionUI_C_1 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_1 is pending kill
+	FAKEVR_C /Game/UEDPIE_0_Prototype.Prototype:PersistentLevel.FAKEVR_C_0
+	Function /Game/FAKEVR.FAKEVR_C:ExecuteUbergraph_FAKEVR:1198
+[2017.03.28-19.11.54:137][903]PIE:Error: Error Blueprint Runtime Error: Attempted to access DecisionUI_C_1 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_1 is pending kill from function: 'ExecuteUbergraph_FAKEVR' from node: Branch in graph: EventGraph in object: FAKEVR with description: Attempted to access DecisionUI_C_1 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_1 is pending kill
+[2017.03.28-19.11.54:137][903]LogScript:Warning: Attempted to access DecisionUI_C_1 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_1 is pending kill
+	FAKEVR_C /Game/UEDPIE_0_Prototype.Prototype:PersistentLevel.FAKEVR_C_0
+	Function /Game/FAKEVR.FAKEVR_C:ExecuteUbergraph_FAKEVR:0BE8
+[2017.03.28-19.11.54:137][903]PIE:Error: Error Blueprint Runtime Error: Attempted to access DecisionUI_C_1 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_1 is pending kill from function: 'ExecuteUbergraph_FAKEVR' from node: Branch in graph: EventGraph in object: FAKEVR with description: Attempted to access DecisionUI_C_1 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_1 is pending kill
+[2017.03.28-19.12.29:196][804]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/MainMenu" FILE="../../../../../PTSD/PTSD-Project/PTSD/Content/MainMenu.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2017.03.28-19.12.29:233][804]LogSavePackage: Save=9.76ms
+[2017.03.28-19.12.29:233][804]LogSavePackage: Moving '../../../../../PTSD/PTSD-Project/PTSD/Saved/MainMenu100217CF43426C3F10E84981B68B580B.tmp' to '../../../../../PTSD/PTSD-Project/PTSD/Content/MainMenu.umap'
+[2017.03.28-19.12.29:235][804]LogSavePackage:Display: Finished SavePackage ../../../../../PTSD/PTSD-Project/PTSD/Content/MainMenu.umap
+[2017.03.28-19.12.29:250][804]LogFileHelpers: Saving map 'MainMenu' took 0.099
+[2017.03.28-19.12.29:251][804]Cmd: MAP LOAD FILE="../../../../../PTSD/PTSD-Project/PTSD/Content/MainMenu.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.03.28-19.12.29:251][804]LightingResults: New page: Lighting Build
+[2017.03.28-19.12.29:253][804]LoadErrors: New page: Loading map: MainMenu.umap
+[2017.03.28-19.12.29:253][804]MapCheck: New page: Map Check
+[2017.03.28-19.12.29:253][804]LightingResults: New page: Lighting Build
+[2017.03.28-19.12.29:334][804]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.03.28-19.12.29:334][804]LogAIModule: Creating AISystem for world MainMenu
+[2017.03.28-19.12.29:363][804]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.03.28-19.12.29:404][804]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 41.466ms to complete.
+[2017.03.28-19.12.29:405][804]LogFileHelpers: Loading map 'MainMenu' took 0.154
+[2017.03.28-19.15.46:930][649]LogSlate: Took 0.000200 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.03.28-19.16.32:380][628]LogEditorTransaction: Undo Modify Component(s)
+[2017.03.28-19.22.26:455][118]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/MainMenu' took 0.051
+[2017.03.28-19.22.26:514][118]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/KeyboardInput] ([1] browsable assets)...
+[2017.03.28-19.22.26:551][118]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/KeyboardInput.KeyboardInput]
+[2017.03.28-19.22.26:551][118]OBJ SavePackage: Finished generating thumbnails for package [/Game/KeyboardInput]
+[2017.03.28-19.22.26:551][118]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/KeyboardInput" FILE="../../../../../PTSD/PTSD-Project/PTSD/Saved/Autosaves/Game/KeyboardInput_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2017.03.28-19.22.26:576][118]LogSavePackage: Save=21.05ms
+[2017.03.28-19.22.26:576][118]LogSavePackage: Moving '../../../../../PTSD/PTSD-Project/PTSD/Saved/KeyboardInput_Auto1039F10F547984FD80A0E1CAA7ECD27F5.tmp' to '../../../../../PTSD/PTSD-Project/PTSD/Saved/Autosaves/Game/KeyboardInput_Auto1.uasset'
+[2017.03.28-19.22.26:577][118]LogSavePackage:Display: Finished SavePackage ../../../../../PTSD/PTSD-Project/PTSD/Saved/Autosaves/Game/KeyboardInput_Auto1.uasset
+[2017.03.28-19.22.26:577][118]LogFileHelpers: Auto-saving content packages took 0.121
+[2017.03.28-19.26.03:299][163]BlueprintLog: New page: Compile KeyboardInput
+[2017.03.28-19.26.04:055][188]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/KeyboardInput" FILE="../../../../../PTSD/PTSD-Project/PTSD/Content/KeyboardInput.uasset" SILENT=true
+[2017.03.28-19.26.04:078][188]LogSavePackage: Save=20.70ms
+[2017.03.28-19.26.04:078][188]LogSavePackage: Moving '../../../../../PTSD/PTSD-Project/PTSD/Saved/KeyboardInputAAEA69D24C0C72F0079C8F9A42214317.tmp' to '../../../../../PTSD/PTSD-Project/PTSD/Content/KeyboardInput.uasset'
+[2017.03.28-19.26.04:079][188]LogSavePackage:Display: Finished SavePackage ../../../../../PTSD/PTSD-Project/PTSD/Content/KeyboardInput.uasset
+[2017.03.28-19.26.08:378][519]LogAIModule: Creating AISystem for world Prototype
+[2017.03.28-19.26.08:399][519]Cmd: MAP LOAD FILE="../../../../../PTSD/PTSD-Project/PTSD/Content/Prototype.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.03.28-19.26.08:399][519]LightingResults: New page: Lighting Build
+[2017.03.28-19.26.08:401][519]LoadErrors: New page: Loading map: Prototype.umap
+[2017.03.28-19.26.08:401][519]MapCheck: New page: Map Check
+[2017.03.28-19.26.08:401][519]LightingResults: New page: Lighting Build
+[2017.03.28-19.26.08:511][519]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.03.28-19.26.08:530][519]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.03.28-19.26.08:575][519]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 44.521ms to complete.
+[2017.03.28-19.26.08:575][519]LogFileHelpers: Loading map 'Prototype' took 0.176
+[2017.03.28-19.26.09:645][614]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.28-19.26.09:663][614]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.28-19.26.09:663][614]PIE: New page: PIE session: Prototype (Mar 28, 2017, 11:26:09 AM)
+[2017.03.28-19.26.09:663][614]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Prototype
+[2017.03.28-19.26.09:666][614]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002661s)
+[2017.03.28-19.26.09:667][614]LogAIModule: Creating AISystem for world Prototype
+[2017.03.28-19.26.09:667][614]LogPlayLevel: PIE: World Init took: (0.000829s)
+[2017.03.28-19.26.09:667][614]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Prototype.Prototype to /Game/UEDPIE_0_Prototype.Prototype (0.003719s)
+[2017.03.28-19.26.09:689][614]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.28-19.26.09:698][614]LogInit: FAudioDevice initialized.
+[2017.03.28-19.26.09:726][614]LogLoad: Game class is 'VRGameMode_C'
+[2017.03.28-19.26.09:728][614]LogWorld: Bringing World /Game/UEDPIE_0_Prototype.Prototype up for play (max tick rate 0) at 2017.03.28-15.26.09
+[2017.03.28-19.26.09:728][614]LogWorld: Bringing up level for play took: 0.001598
+[2017.03.28-19.26.09:730][614]PIE: Info Play in editor start time for /Game/UEDPIE_0_Prototype 1.018
+[2017.03.28-19.26.22:408][121]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.28-19.26.22:423][121]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.28-19.26.22:423][121]PIE: New page: PIE session: Prototype (Mar 28, 2017, 11:26:22 AM)
+[2017.03.28-19.26.22:423][121]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Prototype
+[2017.03.28-19.26.22:426][121]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002804s)
+[2017.03.28-19.26.22:427][121]LogAIModule: Creating AISystem for world Prototype
+[2017.03.28-19.26.22:427][121]LogPlayLevel: PIE: World Init took: (0.000855s)
+[2017.03.28-19.26.22:427][121]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Prototype.Prototype to /Game/UEDPIE_0_Prototype.Prototype (0.003857s)
+[2017.03.28-19.26.22:451][121]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.28-19.26.22:459][121]LogInit: FAudioDevice initialized.
+[2017.03.28-19.26.22:490][121]LogLoad: Game class is 'VRGameMode_C'
+[2017.03.28-19.26.22:492][121]LogWorld: Bringing World /Game/UEDPIE_0_Prototype.Prototype up for play (max tick rate 0) at 2017.03.28-15.26.22
+[2017.03.28-19.26.22:493][121]LogWorld: Bringing up level for play took: 0.001777
+[2017.03.28-19.26.22:494][121]PIE: Info Play in editor start time for /Game/UEDPIE_0_Prototype -0.217
+[2017.03.28-20.07.04:643][101]SourceControl: Info Source control is disabled
+[2017.03.28-20.07.06:809][231]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.28-20.07.06:894][231]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.28-20.07.06:894][231]PIE: New page: PIE session: Prototype (Mar 28, 2017, 12:07:06 PM)
+[2017.03.28-20.07.06:895][231]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Prototype
+[2017.03.28-20.07.06:907][231]LogPlayLevel: PIE: StaticDuplicateObject took: (0.011983s)
+[2017.03.28-20.07.06:909][231]LogAIModule: Creating AISystem for world Prototype
+[2017.03.28-20.07.06:910][231]LogPlayLevel: PIE: World Init took: (0.002844s)
+[2017.03.28-20.07.06:910][231]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Prototype.Prototype to /Game/UEDPIE_0_Prototype.Prototype (0.015504s)
+[2017.03.28-20.07.06:946][231]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.28-20.07.06:956][231]LogInit: FAudioDevice initialized.
+[2017.03.28-20.07.06:989][231]LogLoad: Game class is 'VRGameMode_C'
+[2017.03.28-20.07.06:993][231]LogWorld: Bringing World /Game/UEDPIE_0_Prototype.Prototype up for play (max tick rate 60) at 2017.03.28-16.07.06
+[2017.03.28-20.07.06:994][231]LogWorld: Bringing up level for play took: 0.002931
+[2017.03.28-20.07.06:996][231]PIE: Info Play in editor start time for /Game/UEDPIE_0_Prototype 0.285
+[2017.03.28-20.08.39:365][771]LogBlueprintUserMessages: [FAKEVR_C_0] Name: Kevin
+Date: 0/0/0
+Decisions ----------------------------------
+Chair:  Throw away StartTime: 00:31.30 EndTime: 92.576462 
+
+[2017.03.28-20.08.39:366][771]LogScript:Warning: Attempted to access DecisionUI_C_0 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_0 is pending kill
+	FAKEVR_C /Game/UEDPIE_0_Prototype.Prototype:PersistentLevel.FAKEVR_C_0
+	Function /Game/FAKEVR.FAKEVR_C:ExecuteUbergraph_FAKEVR:10A8
+[2017.03.28-20.08.39:366][771]PIE:Error: Error Blueprint Runtime Error: Attempted to access DecisionUI_C_0 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_0 is pending kill from function: 'ExecuteUbergraph_FAKEVR' from node: Branch in graph: EventGraph in object: FAKEVR with description: Attempted to access DecisionUI_C_0 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_0 is pending kill
+[2017.03.28-20.08.39:366][771]LogScript:Warning: Attempted to access DecisionUI_C_0 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_0 is pending kill
+	FAKEVR_C /Game/UEDPIE_0_Prototype.Prototype:PersistentLevel.FAKEVR_C_0
+	Function /Game/FAKEVR.FAKEVR_C:ExecuteUbergraph_FAKEVR:1198
+[2017.03.28-20.08.39:366][771]PIE:Error: Error Blueprint Runtime Error: Attempted to access DecisionUI_C_0 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_0 is pending kill from function: 'ExecuteUbergraph_FAKEVR' from node: Branch in graph: EventGraph in object: FAKEVR with description: Attempted to access DecisionUI_C_0 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_0 is pending kill
+[2017.03.28-20.08.39:366][771]LogScript:Warning: Attempted to access DecisionUI_C_0 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_0 is pending kill
+	FAKEVR_C /Game/UEDPIE_0_Prototype.Prototype:PersistentLevel.FAKEVR_C_0
+	Function /Game/FAKEVR.FAKEVR_C:ExecuteUbergraph_FAKEVR:0BE8
+[2017.03.28-20.08.39:366][771]PIE:Error: Error Blueprint Runtime Error: Attempted to access DecisionUI_C_0 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_0 is pending kill from function: 'ExecuteUbergraph_FAKEVR' from node: Branch in graph: EventGraph in object: FAKEVR with description: Attempted to access DecisionUI_C_0 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_0 is pending kill
+[2017.03.28-20.08.48:985][342]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.28-20.08.48:999][342]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.28-20.08.48:999][342]PIE: New page: PIE session: Prototype (Mar 28, 2017, 12:08:48 PM)
+[2017.03.28-20.08.49:000][342]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Prototype
+[2017.03.28-20.08.49:002][342]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002669s)
+[2017.03.28-20.08.49:003][342]LogAIModule: Creating AISystem for world Prototype
+[2017.03.28-20.08.49:003][342]LogPlayLevel: PIE: World Init took: (0.000939s)
+[2017.03.28-20.08.49:003][342]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Prototype.Prototype to /Game/UEDPIE_0_Prototype.Prototype (0.003826s)
+[2017.03.28-20.08.49:020][342]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.28-20.08.49:030][342]LogInit: FAudioDevice initialized.
+[2017.03.28-20.08.49:061][342]LogLoad: Game class is 'VRGameMode_C'
+[2017.03.28-20.08.49:064][342]LogWorld: Bringing World /Game/UEDPIE_0_Prototype.Prototype up for play (max tick rate 60) at 2017.03.28-16.08.49
+[2017.03.28-20.08.49:064][342]LogWorld: Bringing up level for play took: 0.001851
+[2017.03.28-20.08.49:065][342]PIE: Info Play in editor start time for /Game/UEDPIE_0_Prototype 0.354
+[2017.03.28-20.09.25:164][507]LogBlueprintUserMessages: [FAKEVR_C_0] Name: Kevin
+Date: 0/0/0
+Decisions ----------------------------------
+FireAlarm:  Keep StartTime: 00:31.51 EndTime: 36.195393 
+
+[2017.03.28-20.09.25:165][507]LogScript:Warning: Attempted to access DecisionUI_C_0 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_0 is pending kill
+	FAKEVR_C /Game/UEDPIE_0_Prototype.Prototype:PersistentLevel.FAKEVR_C_0
+	Function /Game/FAKEVR.FAKEVR_C:ExecuteUbergraph_FAKEVR:1198
+[2017.03.28-20.09.25:165][507]PIE:Error: Error Blueprint Runtime Error: Attempted to access DecisionUI_C_0 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_0 is pending kill from function: 'ExecuteUbergraph_FAKEVR' from node: Branch in graph: EventGraph in object: FAKEVR with description: Attempted to access DecisionUI_C_0 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_0 is pending kill
+[2017.03.28-20.09.25:165][507]LogScript:Warning: Attempted to access DecisionUI_C_0 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_0 is pending kill
+	FAKEVR_C /Game/UEDPIE_0_Prototype.Prototype:PersistentLevel.FAKEVR_C_0
+	Function /Game/FAKEVR.FAKEVR_C:ExecuteUbergraph_FAKEVR:0BE8
+[2017.03.28-20.09.25:165][507]PIE:Error: Error Blueprint Runtime Error: Attempted to access DecisionUI_C_0 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_0 is pending kill from function: 'ExecuteUbergraph_FAKEVR' from node: Branch in graph: EventGraph in object: FAKEVR with description: Attempted to access DecisionUI_C_0 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_0 is pending kill
+[2017.03.28-20.09.47:399][841]LogBlueprintUserMessages: [FAKEVR_C_0] Name: Kevin
+Date: 0/0/0
+Decisions ----------------------------------
+FireAlarm:  Keep StartTime: 00:31.51 EndTime: 36.195393 
+Chair:  Throw away StartTime: 00:53.52 EndTime: 58.428703 
+
+[2017.03.28-20.09.47:399][841]LogScript:Warning: Attempted to access DecisionUI_C_1 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_1 is pending kill
+	FAKEVR_C /Game/UEDPIE_0_Prototype.Prototype:PersistentLevel.FAKEVR_C_0
+	Function /Game/FAKEVR.FAKEVR_C:ExecuteUbergraph_FAKEVR:10A8
+[2017.03.28-20.09.47:399][841]PIE:Error: Error Blueprint Runtime Error: Attempted to access DecisionUI_C_1 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_1 is pending kill from function: 'ExecuteUbergraph_FAKEVR' from node: Branch in graph: EventGraph in object: FAKEVR with description: Attempted to access DecisionUI_C_1 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_1 is pending kill
+[2017.03.28-20.09.47:399][841]PIE:Error: Error Blueprint Runtime Error: Attempted to access DecisionUI_C_1 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_1 is pending kill from function: 'ExecuteUbergraph_FAKEVR' from node: Branch in graph: EventGraph in object: FAKEVR with description: Attempted to access DecisionUI_C_1 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_1 is pending kill
+[2017.03.28-20.09.47:399][841]PIE:Error: Error Blueprint Runtime Error: Attempted to access DecisionUI_C_1 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_1 is pending kill from function: 'ExecuteUbergraph_FAKEVR' from node: Branch in graph: EventGraph in object: FAKEVR with description: Attempted to access DecisionUI_C_1 via property K2Node_DynamicCast_AsDecision_UI, but DecisionUI_C_1 is pending kill
+[2017.03.28-20.51.33:753][969]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2017.03.28-20.51.34:187][970]Cmd: QUIT_EDITOR
+[2017.03.28-20.51.34:921][970]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.03.28-20.51.34:965][970]LogExit: Preparing to exit.
+[2017.03.28-20.51.35:597][970]LogDirectoryWatcher: A directory notification for 'C:/PTSD/PTSD-Project/PTSD/Content/' was aborted.
+[2017.03.28-20.51.35:701][970]LogExit: Editor shut down
+[2017.03.28-20.51.35:702][970]LogExit: Transaction tracking system shut down
+[2017.03.28-20.51.35:880][970]LogObj: Freed 0b from 0 cluster array pools.
+[2017.03.28-20.51.35:880][970]LogExit: Object subsystem successfully closed.
+[2017.03.28-20.51.35:914][970]LogD3D11RHI: Shutdown
+[2017.03.28-20.51.35:914][970]LogD3D11RHI: CleanupD3DDevice
+[2017.03.28-20.51.36:089][970]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.03.28-20.51.36:120][970]LogModuleManager: Shutting down and abandoning module HierarchicalLODUtilities (506)
+[2017.03.28-20.51.36:120][970]LogModuleManager: Shutting down and abandoning module BlueprintGraph (504)
+[2017.03.28-20.51.36:120][970]LogModuleManager: Shutting down and abandoning module BlueprintProfiler (502)
+[2017.03.28-20.51.36:131][970]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (500)
+[2017.03.28-20.51.36:138][970]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (498)
+[2017.03.28-20.51.36:138][970]LogModuleManager: Shutting down and abandoning module CrashTracker (496)
+[2017.03.28-20.51.36:138][970]LogModuleManager: Shutting down and abandoning module AddContentDialog (494)
+[2017.03.28-20.51.36:152][970]LogDirectoryWatcher: A directory notification for 'C:/Games/UE_4.15/FeaturePacks/' was aborted.
+[2017.03.28-20.51.36:171][970]LogModuleManager: Shutting down and abandoning module WidgetCarousel (493)
+[2017.03.28-20.51.36:171][970]LogModuleManager: Shutting down and abandoning module EditorWidgets (490)
+[2017.03.28-20.51.36:171][970]LogModuleManager: Shutting down and abandoning module CollectionManager (488)
+[2017.03.28-20.51.36:171][970]LogDirectoryWatcher: A directory notification for 'C:/PTSD/PTSD-Project/PTSD/Content/Collections/' was aborted.
+[2017.03.28-20.51.36:171][970]LogDirectoryWatcher: A directory notification for 'C:/PTSD/PTSD-Project/PTSD/Content/Developers/inner000/Collections/' was aborted.
+[2017.03.28-20.51.36:171][970]LogDirectoryWatcher: A directory notification for 'C:/PTSD/PTSD-Project/PTSD/Saved/Collections/' was aborted.
+[2017.03.28-20.51.36:171][970]LogModuleManager: Shutting down and abandoning module SceneOutliner (486)
+[2017.03.28-20.51.36:171][970]LogModuleManager: Shutting down and abandoning module StatsViewer (484)
+[2017.03.28-20.51.36:171][970]LogModuleManager: Shutting down and abandoning module FoliageEdit (482)
+[2017.03.28-20.51.36:171][970]LogModuleManager: Shutting down and abandoning module LandscapeEditor (480)
+[2017.03.28-20.51.36:172][970]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (478)
+[2017.03.28-20.51.36:172][970]LogModuleManager: Shutting down and abandoning module ActorPickerMode (476)
+[2017.03.28-20.51.36:172][970]LogModuleManager: Shutting down and abandoning module GeometryMode (474)
+[2017.03.28-20.51.36:172][970]LogModuleManager: Shutting down and abandoning module TextureAlignMode (472)
+[2017.03.28-20.51.36:172][970]LogModuleManager: Shutting down and abandoning module BspMode (470)
+[2017.03.28-20.51.36:172][970]LogModuleManager: Shutting down and abandoning module HardwareSurvey (468)
+[2017.03.28-20.51.36:172][970]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (466)
+[2017.03.28-20.51.36:172][970]LogModuleManager: Shutting down and abandoning module AutomationWorker (464)
+[2017.03.28-20.51.36:172][970]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (462)
+[2017.03.28-20.51.36:172][970]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (460)
+[2017.03.28-20.51.36:172][970]LogModuleManager: Shutting down and abandoning module PlacementMode (459)
+[2017.03.28-20.51.36:172][970]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (456)
+[2017.03.28-20.51.36:172][970]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (454)
+[2017.03.28-20.51.36:172][970]LogModuleManager: Shutting down and abandoning module MfMediaFactory (452)
+[2017.03.28-20.51.36:172][970]LogModuleManager: Shutting down and abandoning module MfMediaEditor (450)
+[2017.03.28-20.51.36:172][970]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (448)
+[2017.03.28-20.51.36:172][970]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (446)
+[2017.03.28-20.51.36:172][970]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (444)
+[2017.03.28-20.51.36:172][970]LogModuleManager: Shutting down and abandoning module Media (443)
+[2017.03.28-20.51.36:172][970]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (440)
+[2017.03.28-20.51.36:172][970]LogModuleManager: Shutting down and abandoning module CharacterAI (438)
+[2017.03.28-20.51.36:172][970]LogModuleManager: Shutting down and abandoning module AudioCapture (436)
+[2017.03.28-20.51.36:172][970]LogModuleManager: Shutting down and abandoning module SequenceRecorder (435)
+[2017.03.28-20.51.36:173][970]LogModuleManager: Shutting down and abandoning module SmartSnapping (432)
+[2017.03.28-20.51.36:173][970]LogModuleManager: Shutting down and abandoning module SessionServices (430)
+[2017.03.28-20.51.36:173][970]LogModuleManager: Shutting down and abandoning module ViewportSnapping (428)
+[2017.03.28-20.51.36:173][970]LogModuleManager: Shutting down and abandoning module ViewportInteraction (426)
+[2017.03.28-20.51.36:173][970]LogModuleManager: Shutting down and abandoning module LogVisualizer (424)
+[2017.03.28-20.51.36:173][970]LogModuleManager: Shutting down and abandoning module IntroTutorials (422)
+[2017.03.28-20.51.36:173][970]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (421)
+[2017.03.28-20.51.36:173][970]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (418)
+[2017.03.28-20.51.36:173][970]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (416)
+[2017.03.28-20.51.36:173][970]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (414)
+[2017.03.28-20.51.36:173][970]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (412)
+[2017.03.28-20.51.36:173][970]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (411)
+[2017.03.28-20.51.36:716][970]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (408)
+[2017.03.28-20.51.36:716][970]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (406)
+[2017.03.28-20.51.36:716][970]LogModuleManager: Shutting down and abandoning module InputBindingEditor (404)
+[2017.03.28-20.51.36:716][970]LogModuleManager: Shutting down and abandoning module NiagaraEditor (402)
+[2017.03.28-20.51.36:716][970]LogModuleManager: Shutting down and abandoning module MergeActors (400)
+[2017.03.28-20.51.36:716][970]LogModuleManager: Shutting down and abandoning module SizeMap (398)
+[2017.03.28-20.51.36:716][970]LogModuleManager: Shutting down and abandoning module TreeMap (396)
+[2017.03.28-20.51.36:716][970]LogModuleManager: Shutting down and abandoning module ReferenceViewer (394)
+[2017.03.28-20.51.36:716][970]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (392)
+[2017.03.28-20.51.36:716][970]LogModuleManager: Shutting down and abandoning module LocalizationService (391)
+[2017.03.28-20.51.36:716][970]LogModuleManager: Shutting down and abandoning module HardwareTargeting (388)
+[2017.03.28-20.51.36:716][970]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (386)
+[2017.03.28-20.51.36:716][970]LogModuleManager: Shutting down and abandoning module UndoHistory (384)
+[2017.03.28-20.51.36:716][970]LogModuleManager: Shutting down and abandoning module UserFeedback (382)
+[2017.03.28-20.51.36:716][970]LogModuleManager: Shutting down and abandoning module XmlParser (380)
+[2017.03.28-20.51.36:716][970]LogModuleManager: Shutting down and abandoning module Blutility (378)
+[2017.03.28-20.51.36:716][970]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (376)
+[2017.03.28-20.51.36:717][970]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (375)
+[2017.03.28-20.51.36:717][970]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (372)
+[2017.03.28-20.51.36:717][970]LogModuleManager: Shutting down and abandoning module SettingsEditor (370)
+[2017.03.28-20.51.36:717][970]LogModuleManager: Shutting down and abandoning module ProjectLauncher (368)
+[2017.03.28-20.51.36:717][970]LogModuleManager: Shutting down and abandoning module SessionFrontend (366)
+[2017.03.28-20.51.36:717][970]LogModuleManager: Shutting down and abandoning module ProfilerClient (364)
+[2017.03.28-20.51.36:717][970]LogModuleManager: Shutting down and abandoning module DeviceManager (362)
+[2017.03.28-20.51.36:717][970]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (361)
+[2017.03.28-20.51.36:770][970]LogModuleManager: Shutting down and abandoning module AutomationController (358)
+[2017.03.28-20.51.36:770][970]LogModuleManager: Shutting down and abandoning module AutomationWindow (356)
+[2017.03.28-20.51.36:770][970]LogModuleManager: Shutting down and abandoning module Layers (354)
+[2017.03.28-20.51.36:770][970]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (352)
+[2017.03.28-20.51.36:770][970]LogModuleManager: Shutting down and abandoning module DetailCustomizations (350)
+[2017.03.28-20.51.36:770][970]LogModuleManager: Shutting down and abandoning module PackagesDialog (348)
+[2017.03.28-20.51.36:770][970]LogModuleManager: Shutting down and abandoning module Persona (346)
+[2017.03.28-20.51.36:770][970]LogModuleManager: Shutting down and abandoning module AnimGraph (345)
+[2017.03.28-20.51.36:770][970]LogModuleManager: Shutting down and abandoning module Kismet (342)
+[2017.03.28-20.51.36:782][970]LogModuleManager: Shutting down and abandoning module GraphEditor (340)
+[2017.03.28-20.51.36:783][970]LogModuleManager: Shutting down and abandoning module ClassViewer (338)
+[2017.03.28-20.51.36:784][970]LogModuleManager: Shutting down and abandoning module Toolbox (336)
+[2017.03.28-20.51.36:784][970]LogModuleManager: Shutting down and abandoning module ModuleUI (334)
+[2017.03.28-20.51.36:785][970]LogModuleManager: Shutting down and abandoning module MovieSceneTools (332)
+[2017.03.28-20.51.36:785][970]LogModuleManager: Shutting down and abandoning module OutputLog (330)
+[2017.03.28-20.51.36:785][970]LogModuleManager: Shutting down and abandoning module GammaUI (328)
+[2017.03.28-20.51.36:785][970]LogModuleManager: Shutting down and abandoning module Documentation (326)
+[2017.03.28-20.51.36:785][970]LogModuleManager: Shutting down and abandoning module Niagara (324)
+[2017.03.28-20.51.36:785][970]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (322)
+[2017.03.28-20.51.36:785][970]LogModuleManager: Shutting down and abandoning module AnalyticsET (320)
+[2017.03.28-20.51.36:785][970]LogModuleManager: Shutting down and abandoning module PortalServices (318)
+[2017.03.28-20.51.36:785][970]LogModuleManager: Shutting down and abandoning module PortalRpc (316)
+[2017.03.28-20.51.36:785][970]LogModuleManager: Shutting down and abandoning module MessagingRpc (314)
+[2017.03.28-20.51.36:785][970]LogModuleManager: Shutting down and abandoning module AIModule (312)
+[2017.03.28-20.51.36:785][970]LogModuleManager: Shutting down and abandoning module GameplayDebugger (311)
+[2017.03.28-20.51.36:786][970]LogModuleManager: Shutting down and abandoning module AITestSuite (309)
+[2017.03.28-20.51.36:786][970]LogModuleManager: Shutting down and abandoning module ProfilerService (306)
+[2017.03.28-20.51.36:856][970]LogModuleManager: Shutting down and abandoning module TaskGraph (304)
+[2017.03.28-20.51.36:856][970]LogModuleManager: Shutting down and abandoning module SteamVRController (302)
+[2017.03.28-20.51.36:856][970]LogModuleManager: Shutting down and abandoning module SteamVR (300)
+[2017.03.28-20.51.36:856][970]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (298)
+[2017.03.28-20.51.36:856][970]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (296)
+[2017.03.28-20.51.36:856][970]LogModuleManager: Shutting down and abandoning module OculusLibrary (294)
+[2017.03.28-20.51.36:856][970]LogModuleManager: Shutting down and abandoning module OculusInput (292)
+[2017.03.28-20.51.36:856][970]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (290)
+[2017.03.28-20.51.36:856][970]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (288)
+[2017.03.28-20.51.36:857][970]LogModuleManager: Shutting down and abandoning module CableComponent (286)
+[2017.03.28-20.51.36:857][970]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (284)
+[2017.03.28-20.51.36:857][970]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (280)
+[2017.03.28-20.51.36:857][970]LogModuleManager: Shutting down and abandoning module HTML5Networking (278)
+[2017.03.28-20.51.36:857][970]LogModuleManager: Shutting down and abandoning module AlembicImporter (276)
+[2017.03.28-20.51.36:857][970]LogModuleManager: Shutting down and abandoning module AlembicLibrary (275)
+[2017.03.28-20.51.36:857][970]LogModuleManager: Shutting down and abandoning module GeometryCache (274)
+[2017.03.28-20.51.36:857][970]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (273)
+[2017.03.28-20.51.36:857][970]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (268)
+[2017.03.28-20.51.36:857][970]LogModuleManager: Shutting down and abandoning module SuperSearch (267)
+[2017.03.28-20.51.36:857][970]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (264)
+[2017.03.28-20.51.36:857][970]LogModuleManager: Shutting down and abandoning module PluginBrowser (262)
+[2017.03.28-20.51.36:857][970]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (260)
+[2017.03.28-20.51.36:857][970]LogModuleManager: Shutting down and abandoning module EpicSurvey (258)
+[2017.03.28-20.51.36:857][970]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (256)
+[2017.03.28-20.51.36:857][970]LogModuleManager: Shutting down and abandoning module DesktopPlatform (255)
+[2017.03.28-20.51.36:857][970]LogModuleManager: Shutting down and abandoning module UObjectPlugin (252)
+[2017.03.28-20.51.36:857][970]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (250)
+[2017.03.28-20.51.36:857][970]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (248)
+[2017.03.28-20.51.36:857][970]LogModuleManager: Shutting down and abandoning module GitSourceControl (246)
+[2017.03.28-20.51.36:857][970]LogModuleManager: Shutting down and abandoning module SourceControl (245)
+[2017.03.28-20.51.36:857][970]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (242)
+[2017.03.28-20.51.36:857][970]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (240)
+[2017.03.28-20.51.36:857][970]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (238)
+[2017.03.28-20.51.36:857][970]LogModuleManager: Shutting down and abandoning module Paper2DEditor (236)
+[2017.03.28-20.51.36:857][970]LogModuleManager: Shutting down and abandoning module MeshPaint (235)
+[2017.03.28-20.51.36:857][970]LogModuleManager: Shutting down and abandoning module LevelEditor (233)
+[2017.03.28-20.51.36:859][970]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (232)
+[2017.03.28-20.51.36:859][970]LogModuleManager: Shutting down and abandoning module MainFrame (230)
+[2017.03.28-20.51.36:859][970]LogModuleManager: Shutting down and abandoning module HotReload (229)
+[2017.03.28-20.51.36:859][970]LogModuleManager: Shutting down and abandoning module ContentBrowser (225)
+[2017.03.28-20.51.36:861][970]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (222)
+[2017.03.28-20.51.36:861][970]LogModuleManager: Shutting down and abandoning module PhysXVehicles (220)
+[2017.03.28-20.51.36:861][970]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (218)
+[2017.03.28-20.51.36:861][970]LogModuleManager: Shutting down and abandoning module UdpMessaging (216)
+[2017.03.28-20.51.36:962][970]LogModuleManager: Shutting down and abandoning module TcpMessaging (214)
+[2017.03.28-20.51.37:063][970]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (212)
+[2017.03.28-20.51.37:063][970]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (210)
+[2017.03.28-20.51.37:063][970]LogModuleManager: Shutting down and abandoning module FacialAnimation (208)
+[2017.03.28-20.51.37:063][970]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (206)
+[2017.03.28-20.51.37:063][970]LogModuleManager: Shutting down and abandoning module Paper2D (204)
+[2017.03.28-20.51.37:063][970]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (202)
+[2017.03.28-20.51.37:063][970]LogModuleManager: Shutting down and abandoning module WmfMedia (200)
+[2017.03.28-20.51.37:063][970]LogModuleManager: Shutting down and abandoning module MfMedia (198)
+[2017.03.28-20.51.37:063][970]LogModuleManager: Shutting down and abandoning module MediaAssets (196)
+[2017.03.28-20.51.37:063][970]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (194)
+[2017.03.28-20.51.37:063][970]LogModuleManager: Shutting down and abandoning module VREditor (192)
+[2017.03.28-20.51.37:063][970]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (190)
+[2017.03.28-20.51.37:063][970]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (188)
+[2017.03.28-20.51.37:063][970]LogModuleManager: Shutting down and abandoning module FunctionalTesting (186)
+[2017.03.28-20.51.37:063][970]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (184)
+[2017.03.28-20.51.37:063][970]LogModuleManager: Shutting down and abandoning module UMG (182)
+[2017.03.28-20.51.37:063][970]LogModuleManager: Shutting down and abandoning module UMGEditor (181)
+[2017.03.28-20.51.37:064][970]LogModuleManager: Shutting down and abandoning module Sequencer (180)
+[2017.03.28-20.51.37:064][970]LogModuleManager: Shutting down and abandoning module AssetTools (178)
+[2017.03.28-20.51.37:064][970]LogModuleManager: Shutting down and abandoning module MessageLog (177)
+[2017.03.28-20.51.37:064][970]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (176)
+[2017.03.28-20.51.37:064][970]LogModuleManager: Shutting down and abandoning module SlateReflector (170)
+[2017.03.28-20.51.37:064][970]LogModuleManager: Shutting down and abandoning module Slate (168)
+[2017.03.28-20.51.37:064][970]LogModuleManager: Shutting down and abandoning module EditorStyle (166)
+[2017.03.28-20.51.37:067][970]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (164)
+[2017.03.28-20.51.37:068][970]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (162)
+[2017.03.28-20.51.37:068][970]LogModuleManager: Shutting down and abandoning module XAudio2 (160)
+[2017.03.28-20.51.37:068][970]LogModuleManager: Shutting down and abandoning module Networking (158)
+[2017.03.28-20.51.37:068][970]LogModuleManager: Shutting down and abandoning module Core (154)
+[2017.03.28-20.51.37:068][970]LogModuleManager: Shutting down and abandoning module AssetRegistry (152)
+[2017.03.28-20.51.37:236][970]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2017.03.28-20.51.37:236][970]LogDirectoryWatcher: A directory notification for '../../../../../PTSD/PTSD-Project/PTSD/Content/' was aborted.
+[2017.03.28-20.51.37:236][970]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2017.03.28-20.51.37:237][970]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (151)
+[2017.03.28-20.51.37:241][970]LogModuleManager: Shutting down and abandoning module KismetCompiler (148)
+[2017.03.28-20.51.37:241][970]LogModuleManager: Shutting down and abandoning module PhysXFormats (146)
+[2017.03.28-20.51.37:241][970]LogModuleManager: Shutting down and abandoning module MeshUtilities (144)
+[2017.03.28-20.51.37:241][970]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (143)
+[2017.03.28-20.51.37:241][970]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (141)
+[2017.03.28-20.51.37:241][970]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (139)
+[2017.03.28-20.51.37:241][970]LogModuleManager: Shutting down and abandoning module PropertyEditor (137)
+[2017.03.28-20.51.37:242][970]LogModuleManager: Shutting down and abandoning module DerivedDataCache (134)
+[2017.03.28-20.51.37:258][970]LogDerivedDataCache: Shutdown
+[2017.03.28-20.51.37:258][970]LogModuleManager: Shutting down and abandoning module TargetPlatform (132)
+[2017.03.28-20.51.37:259][970]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (131)
+[2017.03.28-20.51.37:259][970]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (129)
+[2017.03.28-20.51.37:259][970]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (127)
+[2017.03.28-20.51.37:259][970]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (125)
+[2017.03.28-20.51.37:259][970]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (123)
+[2017.03.28-20.51.37:259][970]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (121)
+[2017.03.28-20.51.37:259][970]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (119)
+[2017.03.28-20.51.37:259][970]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (117)
+[2017.03.28-20.51.37:259][970]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (115)
+[2017.03.28-20.51.37:259][970]LogModuleManager: Shutting down and abandoning module ImageWrapper (114)
+[2017.03.28-20.51.37:259][970]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (111)
+[2017.03.28-20.51.37:259][970]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (109)
+[2017.03.28-20.51.37:259][970]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (107)
+[2017.03.28-20.51.37:259][970]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (105)
+[2017.03.28-20.51.37:259][970]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (103)
+[2017.03.28-20.51.37:259][970]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (101)
+[2017.03.28-20.51.37:259][970]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (99)
+[2017.03.28-20.51.37:259][970]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (97)
+[2017.03.28-20.51.37:259][970]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (95)
+[2017.03.28-20.51.37:259][970]LogModuleManager: Shutting down and abandoning module Messaging (93)
+[2017.03.28-20.51.37:259][970]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (91)
+[2017.03.28-20.51.37:259][970]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (89)
+[2017.03.28-20.51.37:259][970]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (87)
+[2017.03.28-20.51.37:259][970]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (85)
+[2017.03.28-20.51.37:259][970]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (83)
+[2017.03.28-20.51.37:259][970]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (81)
+[2017.03.28-20.51.37:259][970]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (79)
+[2017.03.28-20.51.37:259][970]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (77)
+[2017.03.28-20.51.37:259][970]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (75)
+[2017.03.28-20.51.37:259][970]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (73)
+[2017.03.28-20.51.37:259][970]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (71)
+[2017.03.28-20.51.37:260][970]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (69)
+[2017.03.28-20.51.37:260][970]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (67)
+[2017.03.28-20.51.37:260][970]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (65)
+[2017.03.28-20.51.37:260][970]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (63)
+[2017.03.28-20.51.37:260][970]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (61)
+[2017.03.28-20.51.37:260][970]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (59)
+[2017.03.28-20.51.37:260][970]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (57)
+[2017.03.28-20.51.37:260][970]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (55)
+[2017.03.28-20.51.37:260][970]LogModuleManager: Shutting down and abandoning module InputCore (52)
+[2017.03.28-20.51.37:260][970]LogModuleManager: Shutting down and abandoning module Settings (50)
+[2017.03.28-20.51.37:260][970]LogModuleManager: Shutting down and abandoning module OculusRift (48)
+[2017.03.28-20.51.37:260][970]LogModuleManager: Shutting down and abandoning module GearVR (46)
+[2017.03.28-20.51.37:260][970]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (44)
+[2017.03.28-20.51.37:260][970]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (42)
+[2017.03.28-20.51.37:260][970]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (38)
+[2017.03.28-20.51.37:260][970]LogOnline:Display: Unloading online subsystem: NULL
+[2017.03.28-20.51.37:260][970]LogModuleManager: Shutting down and abandoning module XMPP (37)
+[2017.03.28-20.51.37:260][970]LogModuleManager: Shutting down and abandoning module HTTP (35)
+[2017.03.28-20.51.37:260][970]LogHttp:Display: Http module shutting down, but needs to wait on 2 outstanding Http requests:
+[2017.03.28-20.51.37:260][970]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B3532B743-4F84-5BFC-2114-DEB5C19452C7%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.15.1-3348071%2B%2B%2BUE4%2BRelease-4.15&UserID=750ac638448b4cf87faad6878f8ba06c%7Cb36ec6f80e614795904645f80cf52a09%7C5b6804fd-5f09-4335-91ff-c0d243bd4d4e&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.03.28-20.51.37:260][970]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B3532B743-4F84-5BFC-2114-DEB5C19452C7%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.15.1-3348071%2B%2B%2BUE4%2BRelease-4.15&UserID=750ac638448b4cf87faad6878f8ba06c%7Cb36ec6f80e614795904645f80cf52a09%7C5b6804fd-5f09-4335-91ff-c0d243bd4d4e&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.03.28-20.51.37:284][970]LogModuleManager: Shutting down and abandoning module SSL (34)
+[2017.03.28-20.51.37:285][970]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
+[2017.03.28-20.51.37:285][970]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
+[2017.03.28-20.51.37:286][970]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
+[2017.03.28-20.51.37:286][970]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2017.03.28-20.51.37:286][970]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2017.03.28-20.51.37:305][970]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
+[2017.03.28-20.51.37:305][970]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
+[2017.03.28-20.51.37:305][970]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
+[2017.03.28-20.51.37:305][970]LogModuleManager: Shutting down and abandoning module Renderer (14)
+[2017.03.28-20.51.37:305][970]LogModuleManager: Shutting down and abandoning module Engine (12)
+[2017.03.28-20.51.37:305][970]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
+[2017.03.28-20.51.37:305][970]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
+[2017.03.28-20.51.37:305][970]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2017.03.28-20.51.37:305][970]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2017.03.28-20.51.37:305][970]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2017.03.28-20.51.37:307][970]LogExit: Exiting.
+[2017.03.28-20.51.37:313][970]Log file closed, 03/28/17 16:51:37
