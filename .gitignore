@@ -47,7 +47,9 @@ Temporary Items
 .apdisk
 
 # unreal Directories
-Intermediate/
-Saved/
-Build/
-DerivedDataCache/
+PTSD/Intermediate/
+PTSD/Saved/
+PTSD/Build/
+PTSD/DerivedDataCache/
+
+
