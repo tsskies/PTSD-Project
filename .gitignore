@@ -53,3 +53,5 @@ PTSD/Build/
 PTSD/DerivedDataCache/
 
 
+PTSD/Intermediate/CachedAssetRegistry.bin
+PTSD/Saved/Config/Windows/EditorPerProjectUserSettings.ini
